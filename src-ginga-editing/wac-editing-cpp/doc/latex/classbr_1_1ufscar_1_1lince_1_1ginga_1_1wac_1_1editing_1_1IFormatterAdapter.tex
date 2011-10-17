@@ -1,0 +1,300 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter}{
+\section{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter}\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+}
+
+
+Interface que permite que as classes do módulo Wac-\/Editing enviem mensagem a classe Formatter do módulo Formatter.  
+
+
+
+
+{\ttfamily \#include $<$IFormatterAdapter.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aa2e061e9d4bd5af9ee7abc5354d4f1a7}{$\sim$IFormatterAdapter} ()
+\begin{DoxyCompactList}\small\item\em Destrói \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter}{IFormatterAdapter}. \item\end{DoxyCompactList}\item 
+virtual LayoutRegion $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a379cbb803df82804f69730a554026081}{addRegion} (string compositeDocumentId, string regionId, string xmlRegion, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual LayoutRegion $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a7451f3f638fd722aabaacf2674620e13}{removeRegion} (string compositeDocumentId, string regionId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual RegionBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_abef17b93da126eef818bafdbbde2f0ab}{addRegionBase} (string compositeDocumentId, string xmlRegionBase, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual RegionBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a1994d2a14c28cd577919f3988b224f00}{removeRegionBase} (string compositeDocumentId, string regionBaseId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Rule $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aebdea3839c00805a61f5f4229e6d5f6f}{addRule} (string compositeDocumentId, string xmlRule, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Rule $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ab50348d88204b6e715d1fd14ad485661}{removeRule} (string compositeDocumentId, string ruleId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual RuleBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a0d65630a7f103c38c04e06c8a584ecba}{addRuleBase} (string compositeDocumentId, string xmlRuleBase, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual RuleBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a9b854fb32b46e6e16557cf2fc24e2f09}{removeRuleBase} (string compositeDocumentId, string ruleBaseId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Transition $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a48ed4a114eced574f59aaf3620c2762e}{addTransition} (string compositeDocumentId, string xmlTransition, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Transition $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_adc780d90fe7d64924f7e04aaf81c3462}{removeTransition} (string compositeDocumentId, string transitionId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual TransitionBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5663e47a9808301d1895a88956e8675c}{addTransitionBase} (string compositeDocumentId, string xmlTransitionBase, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual TransitionBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aaea7ab5bcc692f8cfdd807a8caf2eca7}{removeTransitionBase} (string documentId, string transitionBaseId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Connector $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a540918ec7898b4400e8a6884f250516e}{addConnector} (string compositeDocumentId, string xmlConnector, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Connector $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a825cefaf9055043bef55540808f736e4}{removeConnector} (string compositeDocumentId, string connectorId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual ConnectorBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5c963a0a746a97eb226c4648331c1a7f}{addConnectorBase} (string compositeDocumentId, string xmlConnectorBasem, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual ConnectorBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a2a94ce80149177cdc18c4148d3d3a1c9}{removeConnectorBase} (string compositeDocumentId, string connectorBaseId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual GenericDescriptor $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a019d61ae0261d24cd89e6af449bc8bdb}{addDescriptor} (string compositeDocumentId, string xmlDescriptor, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual GenericDescriptor $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_adf3f2f8459ce0ac8a6e32c9542eb937f}{removeDescriptor} (string compositeDocumentId, string descriptorId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual DescriptorBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a22f741245601c4b74a962755657e97de}{addDescriptorBase} (string compositeDocumentId, string xmlDescriptorBase, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual DescriptorBase $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a1f4faecc413a705202b50da30cb2c17b}{removeDescriptorBase} (string compositeDocumentId, string descriptorBaseId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Base $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad9633e31a4cf3ec03f2e98cbad6567e3}{addImportBase} (string compositeDocumentId, string docBaseId, string xmlImportBase, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Base $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5c6797efc83b486a3dee998fce3d9c88}{removeImportBase} (string compositeDocumentId, string docBaseId, string documentURI, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual NclDocument $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a0fe84bf645231f3b73a05ccb32ebf7a5}{addImportedDocumentBase} (string compositeDocumentId, string xmlImportedDocumentBase, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual NclDocument $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad001bfa641609f9fc6e4b30396229c9f}{removeImportedDocumentBase} (string compositeDocumentId, string importedDocumentBaseId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual NclDocument $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aa41fa59a974389ee0f4ada5194210140}{addImportNCL} (string compositeDocumentId, string xmlImportNCL, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual NclDocument $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a14823ca74a5d4abaf1fe46667a1444a4}{removeImportNCL} (string compositeDocumentId, string documentURI, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Node $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a02b1184b86e58e83ea0d7efd8d6a0afa}{addNode} (string compositeDocumentId, string compositeId, string xmlNode, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Node $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a13c6761d64d836b7ddf83df6aa435455}{removeNode} (string compositeDocumentId, string compositeId, string nodeId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual InterfacePoint $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad7ba323796468d38356e6fe8a22b2f89}{addInterface} (string compositeDocumentId, string nodeId, string xmlInterface, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual InterfacePoint $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a55d4af395d4f71bf1976fc9e08f8488a}{removeInterface} (string compositeDocumentId, string nodeId, string interfaceId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Link $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a9bb5ece52056e1837268b92f100573d1}{addLink} (string compositeDocumentId, string compositeId, string xmlLink, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual Link $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a50258960e9a5f4405e249e58aa2fa109}{removeLink} (string compositeDocumentId, string compositeId, string linkId, int=\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING})=0
+\item 
+virtual bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad7074b5bc22a8efe7a8d7a20fdb8231e}{setPropertyValue} (string compositeDocumentId, string nodeId, string propertyId, string value)=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a48e3735d7a1ade76f2f741592b5b097e}{CLIENT\_\-EDITING} = 1
+\begin{DoxyCompactList}\small\item\em Constante que indica edições do cliente. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{BROADCASTER\_\-EDITING} = 0
+\begin{DoxyCompactList}\small\item\em Constante que indica edições da emissora. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface que permite que as classes do módulo Wac-\/Editing enviem mensagem a classe Formatter do módulo Formatter. Esta interface basicamente possuí todos os métodos de edição ao vivo (que pertencem ao formatter) e outros métodos que são necessários da classe Formatter para a execução do Ginga-\/Wac. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aa2e061e9d4bd5af9ee7abc5354d4f1a7}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!$\sim$IFormatterAdapter@{$\sim$IFormatterAdapter}}
+\index{$\sim$IFormatterAdapter@{$\sim$IFormatterAdapter}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{$\sim$IFormatterAdapter}]{\setlength{\rightskip}{0pt plus 5cm}virtual br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::$\sim$IFormatterAdapter ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aa2e061e9d4bd5af9ee7abc5354d4f1a7}
+
+
+Destrói \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter}{IFormatterAdapter}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a540918ec7898b4400e8a6884f250516e}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addConnector@{addConnector}}
+\index{addConnector@{addConnector}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addConnector}]{\setlength{\rightskip}{0pt plus 5cm}virtual Connector$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addConnector (string {\em compositeDocumentId}, \/  string {\em xmlConnector}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a540918ec7898b4400e8a6884f250516e}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5c963a0a746a97eb226c4648331c1a7f}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addConnectorBase@{addConnectorBase}}
+\index{addConnectorBase@{addConnectorBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addConnectorBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual ConnectorBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addConnectorBase (string {\em compositeDocumentId}, \/  string {\em xmlConnectorBasem}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5c963a0a746a97eb226c4648331c1a7f}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a019d61ae0261d24cd89e6af449bc8bdb}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addDescriptor@{addDescriptor}}
+\index{addDescriptor@{addDescriptor}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}virtual GenericDescriptor$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addDescriptor (string {\em compositeDocumentId}, \/  string {\em xmlDescriptor}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a019d61ae0261d24cd89e6af449bc8bdb}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a22f741245601c4b74a962755657e97de}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addDescriptorBase@{addDescriptorBase}}
+\index{addDescriptorBase@{addDescriptorBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addDescriptorBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual DescriptorBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addDescriptorBase (string {\em compositeDocumentId}, \/  string {\em xmlDescriptorBase}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a22f741245601c4b74a962755657e97de}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad9633e31a4cf3ec03f2e98cbad6567e3}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addImportBase@{addImportBase}}
+\index{addImportBase@{addImportBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addImportBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual Base$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addImportBase (string {\em compositeDocumentId}, \/  string {\em docBaseId}, \/  string {\em xmlImportBase}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad9633e31a4cf3ec03f2e98cbad6567e3}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a0fe84bf645231f3b73a05ccb32ebf7a5}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addImportedDocumentBase@{addImportedDocumentBase}}
+\index{addImportedDocumentBase@{addImportedDocumentBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addImportedDocumentBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual NclDocument$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addImportedDocumentBase (string {\em compositeDocumentId}, \/  string {\em xmlImportedDocumentBase}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a0fe84bf645231f3b73a05ccb32ebf7a5}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aa41fa59a974389ee0f4ada5194210140}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addImportNCL@{addImportNCL}}
+\index{addImportNCL@{addImportNCL}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addImportNCL}]{\setlength{\rightskip}{0pt plus 5cm}virtual NclDocument$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addImportNCL (string {\em compositeDocumentId}, \/  string {\em xmlImportNCL}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aa41fa59a974389ee0f4ada5194210140}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad7ba323796468d38356e6fe8a22b2f89}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addInterface@{addInterface}}
+\index{addInterface@{addInterface}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addInterface}]{\setlength{\rightskip}{0pt plus 5cm}virtual InterfacePoint$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addInterface (string {\em compositeDocumentId}, \/  string {\em nodeId}, \/  string {\em xmlInterface}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad7ba323796468d38356e6fe8a22b2f89}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a9bb5ece52056e1837268b92f100573d1}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addLink@{addLink}}
+\index{addLink@{addLink}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addLink}]{\setlength{\rightskip}{0pt plus 5cm}virtual Link$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addLink (string {\em compositeDocumentId}, \/  string {\em compositeId}, \/  string {\em xmlLink}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a9bb5ece52056e1837268b92f100573d1}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a02b1184b86e58e83ea0d7efd8d6a0afa}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addNode@{addNode}}
+\index{addNode@{addNode}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addNode}]{\setlength{\rightskip}{0pt plus 5cm}virtual Node$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addNode (string {\em compositeDocumentId}, \/  string {\em compositeId}, \/  string {\em xmlNode}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a02b1184b86e58e83ea0d7efd8d6a0afa}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a379cbb803df82804f69730a554026081}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addRegion@{addRegion}}
+\index{addRegion@{addRegion}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addRegion}]{\setlength{\rightskip}{0pt plus 5cm}virtual LayoutRegion$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addRegion (string {\em compositeDocumentId}, \/  string {\em regionId}, \/  string {\em xmlRegion}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a379cbb803df82804f69730a554026081}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_abef17b93da126eef818bafdbbde2f0ab}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addRegionBase@{addRegionBase}}
+\index{addRegionBase@{addRegionBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addRegionBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual RegionBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addRegionBase (string {\em compositeDocumentId}, \/  string {\em xmlRegionBase}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_abef17b93da126eef818bafdbbde2f0ab}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aebdea3839c00805a61f5f4229e6d5f6f}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addRule@{addRule}}
+\index{addRule@{addRule}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addRule}]{\setlength{\rightskip}{0pt plus 5cm}virtual Rule$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addRule (string {\em compositeDocumentId}, \/  string {\em xmlRule}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aebdea3839c00805a61f5f4229e6d5f6f}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a0d65630a7f103c38c04e06c8a584ecba}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addRuleBase@{addRuleBase}}
+\index{addRuleBase@{addRuleBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addRuleBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual RuleBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addRuleBase (string {\em compositeDocumentId}, \/  string {\em xmlRuleBase}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a0d65630a7f103c38c04e06c8a584ecba}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a48ed4a114eced574f59aaf3620c2762e}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addTransition@{addTransition}}
+\index{addTransition@{addTransition}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addTransition}]{\setlength{\rightskip}{0pt plus 5cm}virtual Transition$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addTransition (string {\em compositeDocumentId}, \/  string {\em xmlTransition}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a48ed4a114eced574f59aaf3620c2762e}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5663e47a9808301d1895a88956e8675c}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!addTransitionBase@{addTransitionBase}}
+\index{addTransitionBase@{addTransitionBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{addTransitionBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual TransitionBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::addTransitionBase (string {\em compositeDocumentId}, \/  string {\em xmlTransitionBase}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5663e47a9808301d1895a88956e8675c}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a825cefaf9055043bef55540808f736e4}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeConnector@{removeConnector}}
+\index{removeConnector@{removeConnector}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeConnector}]{\setlength{\rightskip}{0pt plus 5cm}virtual Connector$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeConnector (string {\em compositeDocumentId}, \/  string {\em connectorId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a825cefaf9055043bef55540808f736e4}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a2a94ce80149177cdc18c4148d3d3a1c9}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeConnectorBase@{removeConnectorBase}}
+\index{removeConnectorBase@{removeConnectorBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeConnectorBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual ConnectorBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeConnectorBase (string {\em compositeDocumentId}, \/  string {\em connectorBaseId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a2a94ce80149177cdc18c4148d3d3a1c9}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_adf3f2f8459ce0ac8a6e32c9542eb937f}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeDescriptor@{removeDescriptor}}
+\index{removeDescriptor@{removeDescriptor}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}virtual GenericDescriptor$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeDescriptor (string {\em compositeDocumentId}, \/  string {\em descriptorId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_adf3f2f8459ce0ac8a6e32c9542eb937f}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a1f4faecc413a705202b50da30cb2c17b}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeDescriptorBase@{removeDescriptorBase}}
+\index{removeDescriptorBase@{removeDescriptorBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeDescriptorBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual DescriptorBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeDescriptorBase (string {\em compositeDocumentId}, \/  string {\em descriptorBaseId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a1f4faecc413a705202b50da30cb2c17b}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5c6797efc83b486a3dee998fce3d9c88}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeImportBase@{removeImportBase}}
+\index{removeImportBase@{removeImportBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeImportBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual Base$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeImportBase (string {\em compositeDocumentId}, \/  string {\em docBaseId}, \/  string {\em documentURI}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a5c6797efc83b486a3dee998fce3d9c88}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad001bfa641609f9fc6e4b30396229c9f}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeImportedDocumentBase@{removeImportedDocumentBase}}
+\index{removeImportedDocumentBase@{removeImportedDocumentBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeImportedDocumentBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual NclDocument$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeImportedDocumentBase (string {\em compositeDocumentId}, \/  string {\em importedDocumentBaseId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad001bfa641609f9fc6e4b30396229c9f}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a14823ca74a5d4abaf1fe46667a1444a4}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeImportNCL@{removeImportNCL}}
+\index{removeImportNCL@{removeImportNCL}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeImportNCL}]{\setlength{\rightskip}{0pt plus 5cm}virtual NclDocument$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeImportNCL (string {\em compositeDocumentId}, \/  string {\em documentURI}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a14823ca74a5d4abaf1fe46667a1444a4}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a55d4af395d4f71bf1976fc9e08f8488a}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeInterface@{removeInterface}}
+\index{removeInterface@{removeInterface}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeInterface}]{\setlength{\rightskip}{0pt plus 5cm}virtual InterfacePoint$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeInterface (string {\em compositeDocumentId}, \/  string {\em nodeId}, \/  string {\em interfaceId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a55d4af395d4f71bf1976fc9e08f8488a}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a50258960e9a5f4405e249e58aa2fa109}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeLink@{removeLink}}
+\index{removeLink@{removeLink}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeLink}]{\setlength{\rightskip}{0pt plus 5cm}virtual Link$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeLink (string {\em compositeDocumentId}, \/  string {\em compositeId}, \/  string {\em linkId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a50258960e9a5f4405e249e58aa2fa109}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a13c6761d64d836b7ddf83df6aa435455}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeNode@{removeNode}}
+\index{removeNode@{removeNode}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeNode}]{\setlength{\rightskip}{0pt plus 5cm}virtual Node$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeNode (string {\em compositeDocumentId}, \/  string {\em compositeId}, \/  string {\em nodeId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a13c6761d64d836b7ddf83df6aa435455}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a7451f3f638fd722aabaacf2674620e13}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeRegion@{removeRegion}}
+\index{removeRegion@{removeRegion}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeRegion}]{\setlength{\rightskip}{0pt plus 5cm}virtual LayoutRegion$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeRegion (string {\em compositeDocumentId}, \/  string {\em regionId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a7451f3f638fd722aabaacf2674620e13}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a1994d2a14c28cd577919f3988b224f00}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeRegionBase@{removeRegionBase}}
+\index{removeRegionBase@{removeRegionBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeRegionBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual RegionBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeRegionBase (string {\em compositeDocumentId}, \/  string {\em regionBaseId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a1994d2a14c28cd577919f3988b224f00}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ab50348d88204b6e715d1fd14ad485661}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeRule@{removeRule}}
+\index{removeRule@{removeRule}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeRule}]{\setlength{\rightskip}{0pt plus 5cm}virtual Rule$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeRule (string {\em compositeDocumentId}, \/  string {\em ruleId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ab50348d88204b6e715d1fd14ad485661}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a9b854fb32b46e6e16557cf2fc24e2f09}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeRuleBase@{removeRuleBase}}
+\index{removeRuleBase@{removeRuleBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeRuleBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual RuleBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeRuleBase (string {\em compositeDocumentId}, \/  string {\em ruleBaseId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a9b854fb32b46e6e16557cf2fc24e2f09}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_adc780d90fe7d64924f7e04aaf81c3462}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeTransition@{removeTransition}}
+\index{removeTransition@{removeTransition}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeTransition}]{\setlength{\rightskip}{0pt plus 5cm}virtual Transition$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeTransition (string {\em compositeDocumentId}, \/  string {\em transitionId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_adc780d90fe7d64924f7e04aaf81c3462}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aaea7ab5bcc692f8cfdd807a8caf2eca7}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!removeTransitionBase@{removeTransitionBase}}
+\index{removeTransitionBase@{removeTransitionBase}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{removeTransitionBase}]{\setlength{\rightskip}{0pt plus 5cm}virtual TransitionBase$\ast$ br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::removeTransitionBase (string {\em documentId}, \/  string {\em transitionBaseId}, \/  int = {\ttfamily {\bf BROADCASTER\_\-EDITING}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_aaea7ab5bcc692f8cfdd807a8caf2eca7}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad7074b5bc22a8efe7a8d7a20fdb8231e}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!setPropertyValue@{setPropertyValue}}
+\index{setPropertyValue@{setPropertyValue}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{setPropertyValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::setPropertyValue (string {\em compositeDocumentId}, \/  string {\em nodeId}, \/  string {\em propertyId}, \/  string {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_ad7074b5bc22a8efe7a8d7a20fdb8231e}
+
+
+\subsection{Field Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!BROADCASTER\_\-EDITING@{BROADCASTER\_\-EDITING}}
+\index{BROADCASTER\_\-EDITING@{BROADCASTER\_\-EDITING}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{BROADCASTER\_\-EDITING}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::BROADCASTER\_\-EDITING} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a60586f9a11e5cefcfecef9386c28d4bd}
+
+
+Constante que indica edições da emissora. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a48e3735d7a1ade76f2f741592b5b097e}{
+\index{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}!CLIENT\_\-EDITING@{CLIENT\_\-EDITING}}
+\index{CLIENT\_\-EDITING@{CLIENT\_\-EDITING}!br::ufscar::lince::ginga::wac::editing::IFormatterAdapter@{br::ufscar::lince::ginga::wac::editing::IFormatterAdapter}}
+\subsubsection[{CLIENT\_\-EDITING}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::IFormatterAdapter::CLIENT\_\-EDITING} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter_a48e3735d7a1ade76f2f741592b5b097e}
+
+
+Constante que indica edições do cliente. 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{IFormatterAdapter_8h}{IFormatterAdapter.h}\end{DoxyCompactItemize}

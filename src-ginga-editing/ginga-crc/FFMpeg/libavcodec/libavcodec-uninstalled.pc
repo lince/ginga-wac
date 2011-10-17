@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/usr/src/Lince/GingaCRC/FFMpeg
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 52.38.1
+Requires: libavutil = 50.4.0
+Conflicts:
+Libs: ${libdir}/libavcodec.a   -lz -lbz2 -pthread -lm  -ldl -lz
+Cflags: -I${includedir}

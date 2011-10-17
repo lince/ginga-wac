@@ -1,0 +1,7 @@
+make clean && clear && make
+./ffmpeg_ginga -f fbgrab -r 1 -i : -f rawvideo -vcodec png -vframes 1 -an screenshot.png
+make clean
+make clean && clear && make
+./ffmpeg -f fbgrab -r 25 -i : -f mpeg2video -vcodec mpeg2video -sameq -f alsa -ar 44100 -ac 2 -i default -acodec pcm_s16le /home/feg/Desktop/video.avi
+./ffmpeg_ginga -f fbgrab -r 25 -i : -f mpeg2video -vcodec mpeg2video -sameq -f alsa -ar 44100 -ac 2 -i default -acodec pcm_s16le /home/feg/Desktop/video.avi
+

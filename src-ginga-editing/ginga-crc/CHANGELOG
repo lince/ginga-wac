@@ -1,0 +1,90 @@
+                CHANGE LOG
+
+                COMPONENTE DE REPLICAÇÃO DE CONTEÚDO (CRC)
+
+Alterações:
+  28/01/2010 - 11h15min
+      -> Elaboração de uma documentação simples; limpeza do pacote.
+  28/01/2010 - 10h15min
+      -> Ginga-LSSM: elaboração de um exemplo mais complexo; suporte a múltiplas teclas para parar a transmissão.
+  27/01/2010 - 16h45min
+      -> Alteração na estrutura de diretórios.
+  27/01/2010 - 14h45min
+      -> API VideoCapture: suporte a escolha de salvar em arquivo local ou uso de RTP.
+      -> Ginga-LSSM: inclusão de um exemplo persistindo conteúdo em arquivo e outro replicando via RTP.
+  27/01/2010 - 14h10min
+      -> API VideoCapture: suporte a codecs vídeo.
+      -> Ginga-LSSM: inclusão do formato utilizado e do destino.
+  27/01/2010 - 10h30min
+      -> API AudioCapture: reconhecimento automático de biblioteca de áudio.
+      -> API VideoCapture: reconhecimento automático de biblioteca de áudio.
+  27/01/2010 - 10h30min
+      -> GingaFFMpeg: implementação do método init().
+  26/01/2010 - 16h30min
+      -> Atualização do módulo Ginga-LSSM para suporte a todas as APIs. 
+  26/01/2010 - 14h
+      -> Criação de BASH scripts para automatização de tarefas. 
+  26/01/2010 - 14h
+      -> GingaFFMpeg: correção do namespace.
+      -> Ginga-LSSM: correção do uso de Autools.
+      -> APIs: adição de namespaces para os programas teste. 
+  26/01/2010 - 11h
+      -> Adaptação do módulo Ginga-LSSM para usos da bibliotecas (./autogen.sh --enable-tuner --enable-tsparser --enable-dataprocessing --enable-imagecapture --enable-audiocapture --enable-videocapture).
+      -> API AudioCapture: corrigida chamada ao método run() da classe GingaFFmpeg.
+      -> API VideoCapture: corrigida chamada ao método run() da classe GingaFFmpeg.
+  26/01/2010 - 10h
+      -> GingaFFMpeg: inserção do método reset_recording em av_exit; uso de av_exit antes lançar exceções; implementação do método clean().
+      -> API ImageCapture: corrigida chamada ao método run() da classe GingaFFmpeg.
+  25/01/2010 - 11h
+      -> Testes no Ginga.
+  25/01/2010 - 09h20min
+      -> Organização do pacote.
+  21/01/2010 - 16h30min
+      -> Adicionado suporte à Autotools: adição de um teste.
+  21/01/2010 - 15h00min
+      -> Adicionado suporte à Autotools.
+  21/01/2010 - 10h00min
+      -> Atualização da API AudioCapture:
+         -> API atualizada - métodos run(), start() e stop().
+         -> Threads funcionais.
+      -> Atualização da API VideoCapture:
+         -> API atualizada - métodos run(), start() e stop().
+         -> Threads funcionais.
+  21/01/2010 - 09h00min
+      -> Atualização da API AudioCapture:
+         -> API atualizada - métodos start() e stop().
+      -> Atualização da API VideoCapture:
+         -> API atualizada - métodos start() e stop().
+  20/01/2010 - 15h00min
+      -> Criado um pacote com as bibliotecas usando as ferramentas Autotools.
+  20/01/2010 - 10h00min
+      -> Atualização da API ImageCapture:
+         -> API atualizada - passagem de parâmetros mais elegante (economia de memória).
+      -> Atualização da API AudioCapture:
+         -> API atualizada - passagem de parâmetros mais elegante (economia de memória).
+      -> Atualização da API VideoCapture:
+         -> API atualizada - passagem de parâmetros mais elegante (economia de memória).
+  20/01/2010 - 9h00min
+      -> Atualização da API AudioCapture:
+         -> API atualizada - suporte a codecs.
+      -> Atualização da API VideoCapture:
+         -> API atualizada - suporte a codecs.
+  19/01/2010 - 16h00min
+      -> Início da Criação da API VideoCapture:
+         -> API atualizada - captura e transmissão por RTP realizadas com sucesso.
+  19/01/2010 - 9h30min
+      -> Início da Criação da API VideoCapture:
+         -> API iniciada - implementação de quase todos os métodos.
+  19/01/2010 - 9h30min
+      -> Atualização da API AudioCapture:
+         -> captura realizada com sucesso (OSS/ALSA);
+         -> API expandida - implementação de quase todos os métodos.
+  19/01/2010 - 9h30min
+      -> Atualização da API AudioCapture:
+         -> alguns bugs corrigidos;
+         -> API expandida.
+  18/01/2010 - 12h
+      -> Início da criação da API AudioCapture;
+      -> Revisão dos headers das APIs (inclusão de proteções).
+  18/01/2010 - 11h
+      -> Criação da API ImageCapture.

@@ -1,0 +1,88 @@
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(NclGenerator, 0.1)
+AM_CONFIG_HEADER(config.h)
+
+##############################
+# Checks for programs.
+##############################
+
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX([g++])
+AC_PROG_LIBTOOL
+
+CXXFLAGS="-fPIC $CXXFLAGS"
+CFLAGS="-fPIC $CFLAGS"
+
+# Bring additional directories where things might be found into our
+# search path. I don't know why autoconf doesn't do this by default
+for spfx in /usr/lib/ /usr/local/lib/ /usr/local/lib/ginga/; do
+if test -d ${spfx}; then
+LDFLAGS="-L${spfx} $LDFLAGS"
+fi
+done
+
+for spfx in /usr/include/ /usr/local/include/ /usr/local/include/ginga/; do
+if test -d ${spfx}; then
+CPPFLAGS="-I${spfx} $CPPFLAGS"
+fi
+done
+
+##############################
+# Checks for header files.   #
+##############################
+
+###########
+# NCL 3.0 #
+###########
+
+AC_CHECK_HEADER([ncl/Entity.h], [], AC_MSG_ERROR([
+
+Couldn't find NCL 3.0 headers.
+Please install ncl30 project.
+
+]))
+
+#####################
+# NCL 3.0 Converter #
+#####################
+#TODO: resolve header dependencies
+#AC_CHECK_HEADER([], [], AC_MSG_ERROR([
+#
+#Couldn't find  headers.
+#Please install .
+#
+#]))
+
+
+########
+# LIBS #
+########
+
+###########
+# NCL 3.0 #
+###########
+AC_HAVE_LIBRARY(ncl30, , AC_ERROR([
+
+Couldn't find ncl30 library.
+Please install NCL 3.0.
+
+]))
+
+#####################
+# NCL 3.0 Converter #
+#####################
+AC_HAVE_LIBRARY(ncl30converter, , AC_ERROR([
+
+Couldn't find ncl30converter library.
+Please install NCL 3.0 Converter.
+
+]))
+
+##############################
+# Makefiles
+##############################
+
+AC_OUTPUT([
+Makefile include/Makefile src/Makefile
+])

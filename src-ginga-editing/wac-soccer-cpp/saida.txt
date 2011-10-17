@@ -1,0 +1,11 @@
+Stopping infrared application launcher daemon (irexec): [60G[[0;32m  OK  [0;39m]
+Tue, 20 Jul 2010 19:21:04 GMT	br.ufscar.lince.ginga - Entrando na aplicação.
+Tue, 20 Jul 2010 19:21:04 GMT	br.ufscar.lince.ginga - Iniciando o WiiDriver.
+
+ComponentManager::getComponentDescription
+ComponentManager::getComponent opening component 'libgingacccmparser.so'
+ComponentManager::getComponent component 'libgingacccmparser.so' OPENED
+ComponentManager::refreshComponentDescription REFRESHED.
+ComponentManager::getComponent opening component 'libgingaccsystemiodfb.so'
+ComponentManager::getComponent component 'libgingaccsystemiodfb.so' OPENED
+Starting infrared application launcher daemon (irexec): [60G[[0;32m  OK  [0;39m]

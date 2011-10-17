@@ -1,0 +1,280 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState}{
+\section{br::ufscar::lince::ginga::wac::state::IElementaryState Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState}\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+}
+
+
+Esta classe generica representa o Estado de um Player em um determinado momento, servindo de interface com as aplicações que desejam obter os estados do player.  
+
+
+
+
+{\ttfamily \#include $<$IElementaryState.h$>$}
+
+Inheritance diagram for br::ufscar::lince::ginga::wac::state::IElementaryState:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual short \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a6df6b08801327e6b2c06c428119caba9}{getStatus} ()=0
+\begin{DoxyCompactList}\small\item\em Este método retorna uma número que representa o estado do player. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2dd09dc8dcee4eb6a4b23fe4d1f001ad}{getMediaTime} ()=0
+\begin{DoxyCompactList}\small\item\em Este método retorna o tempo atual do player, considerando o inicio como sendo 0. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a22990483a86a4fdb0d8203c2f96f701c}{getHight} ()=0
+\begin{DoxyCompactList}\small\item\em Este método retorna a altura da imagem exibida pelo player. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a13218fa1e799a3aabc8f20ffd7c134f5}{getWidh} ()=0
+\begin{DoxyCompactList}\small\item\em Este método retorna a largura da imagem exibida pelo player. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2d7a7f8c9945df9ad15d87863a1d288e}{isPresented} ()=0
+\begin{DoxyCompactList}\small\item\em Este permite saber se a apresentação do player já foi encerrada. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a64cd15f7d8434054345243d877ede453}{isVisible} ()=0
+\begin{DoxyCompactList}\small\item\em Este permite saber a mídia exibida pelo player está visivel. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a01bae35ea4efe31c179e81db8fb8a126}{getPropertyValue} (string name)=0
+\begin{DoxyCompactList}\small\item\em Este método permite obter o valor de uma propriedade do player. \item\end{DoxyCompactList}\item 
+virtual vector$<$ string $>$ $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a68c7e2ba58623cea860d6de1fc7112e7}{getPropertiesNames} ()=0
+\begin{DoxyCompactList}\small\item\em Este método permite otbter todos os nomes das propriedades possuidas pelo player. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a5fae9abe330000d369a739626d089a87}{getMrl} ()=0
+\begin{DoxyCompactList}\small\item\em Este método permite obter o MRL da mídia executada pelo player. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_abeabe720e157120f97d6a911460f6d71}{getStatusName} ()=0
+\begin{DoxyCompactList}\small\item\em Este método retorna um string que representa o estado atual do player. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_ae16e3a178e9c9b147bc0a02b5ddaf4e6}{$\sim$IElementaryState} ()
+\begin{DoxyCompactList}\small\item\em Destrutor genérico. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const short \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a6b21cf3f8015ef6cbb839a2fc37e5a85}{NONE}
+\begin{DoxyCompactList}\small\item\em Constante que representa o estado \char`\"{}nenhum\char`\"{} do player. \item\end{DoxyCompactList}\item 
+static const short \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2d598e7badbbbb5460ed5e8204bb878f}{PLAY}
+\begin{DoxyCompactList}\small\item\em Constante que representa o estado \char`\"{}em execução\char`\"{} do player. \item\end{DoxyCompactList}\item 
+static const short \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a66848654431dc226cdd3349f0aa845f1}{PAUSE}
+\begin{DoxyCompactList}\small\item\em Constante que representa o estado \char`\"{}pausado\char`\"{} do player. \item\end{DoxyCompactList}\item 
+static const short \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_af53fab5b92d73acc4fb6541d2906d6ce}{STOP}
+\begin{DoxyCompactList}\small\item\em Constante que representa o estado \char`\"{}parado\char`\"{} do player. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Esta classe generica representa o Estado de um Player em um determinado momento, servindo de interface com as aplicações que desejam obter os estados do player. Futuramente, ela pode ser espandida para armazenar mais informações referentes ao estado do player que não podem ser obtidas diretamente da módulo players, mas sim da classe PlayerAdapter do módulo Formatter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_ae16e3a178e9c9b147bc0a02b5ddaf4e6}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!$\sim$IElementaryState@{$\sim$IElementaryState}}
+\index{$\sim$IElementaryState@{$\sim$IElementaryState}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{$\sim$IElementaryState}]{\setlength{\rightskip}{0pt plus 5cm}virtual br::ufscar::lince::ginga::wac::state::IElementaryState::$\sim$IElementaryState ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_ae16e3a178e9c9b147bc0a02b5ddaf4e6}
+
+
+Destrutor genérico. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a22990483a86a4fdb0d8203c2f96f701c}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getHight@{getHight}}
+\index{getHight@{getHight}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getHight}]{\setlength{\rightskip}{0pt plus 5cm}virtual int br::ufscar::lince::ginga::wac::state::IElementaryState::getHight ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a22990483a86a4fdb0d8203c2f96f701c}
+
+
+Este método retorna a altura da imagem exibida pelo player. 
+
+\begin{DoxyReturn}{Returns}
+Altura da Imagem exibida pelo player 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_afe5f10172203bf1bc6064166658de738}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2dd09dc8dcee4eb6a4b23fe4d1f001ad}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getMediaTime@{getMediaTime}}
+\index{getMediaTime@{getMediaTime}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getMediaTime}]{\setlength{\rightskip}{0pt plus 5cm}virtual double br::ufscar::lince::ginga::wac::state::IElementaryState::getMediaTime ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2dd09dc8dcee4eb6a4b23fe4d1f001ad}
+
+
+Este método retorna o tempo atual do player, considerando o inicio como sendo 0. 
+
+\begin{DoxyReturn}{Returns}
+O tempo atual do player. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_a05bc58afddd1713b6300f383b7e26826}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a5fae9abe330000d369a739626d089a87}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getMrl@{getMrl}}
+\index{getMrl@{getMrl}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getMrl}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IElementaryState::getMrl ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a5fae9abe330000d369a739626d089a87}
+
+
+Este método permite obter o MRL da mídia executada pelo player. 
+
+\begin{DoxyReturn}{Returns}
+Mrl da mídia executada pelo player. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_a3714512e115e6e66bfa55eb5694951ec}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a68c7e2ba58623cea860d6de1fc7112e7}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getPropertiesNames@{getPropertiesNames}}
+\index{getPropertiesNames@{getPropertiesNames}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getPropertiesNames}]{\setlength{\rightskip}{0pt plus 5cm}virtual vector$<$string$>$$\ast$ br::ufscar::lince::ginga::wac::state::IElementaryState::getPropertiesNames ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a68c7e2ba58623cea860d6de1fc7112e7}
+
+
+Este método permite otbter todos os nomes das propriedades possuidas pelo player. 
+
+\begin{DoxyReturn}{Returns}
+Vetor contento todos os nomes das propriedades. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_a135050e832afa82aeff759a54087031b}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a01bae35ea4efe31c179e81db8fb8a126}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getPropertyValue@{getPropertyValue}}
+\index{getPropertyValue@{getPropertyValue}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getPropertyValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IElementaryState::getPropertyValue (string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a01bae35ea4efe31c179e81db8fb8a126}
+
+
+Este método permite obter o valor de uma propriedade do player. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Nome da propriedade a ser obtida \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor da propriedade armazenada em um string. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_aaa47390c93fda945f7ba5ee80031a137}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a6df6b08801327e6b2c06c428119caba9}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getStatus}]{\setlength{\rightskip}{0pt plus 5cm}virtual short br::ufscar::lince::ginga::wac::state::IElementaryState::getStatus ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a6df6b08801327e6b2c06c428119caba9}
+
+
+Este método retorna uma número que representa o estado do player. 
+
+\begin{DoxyReturn}{Returns}
+Um número que representa o estado do player 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_a08806ab0fedbb9684ca5a0d1cb42c5ac}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_abeabe720e157120f97d6a911460f6d71}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getStatusName@{getStatusName}}
+\index{getStatusName@{getStatusName}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getStatusName}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IElementaryState::getStatusName ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_abeabe720e157120f97d6a911460f6d71}
+
+
+Este método retorna um string que representa o estado atual do player. 
+
+Os nomes possíveis de serem retornados são: 'NOME', 'PLAY', 'PAUSE' e 'STOP' \begin{DoxyReturn}{Returns}
+String com o nome do estado atual do player. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_ae1c2e7da72253acf9b5c19754994047c}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a13218fa1e799a3aabc8f20ffd7c134f5}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!getWidh@{getWidh}}
+\index{getWidh@{getWidh}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{getWidh}]{\setlength{\rightskip}{0pt plus 5cm}virtual int br::ufscar::lince::ginga::wac::state::IElementaryState::getWidh ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a13218fa1e799a3aabc8f20ffd7c134f5}
+
+
+Este método retorna a largura da imagem exibida pelo player. 
+
+\begin{DoxyReturn}{Returns}
+Largura da Imagem exibida pelo player 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_adf39d11c81458c2b636b797821a81fc3}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2d7a7f8c9945df9ad15d87863a1d288e}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!isPresented@{isPresented}}
+\index{isPresented@{isPresented}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{isPresented}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool br::ufscar::lince::ginga::wac::state::IElementaryState::isPresented ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2d7a7f8c9945df9ad15d87863a1d288e}
+
+
+Este permite saber se a apresentação do player já foi encerrada. 
+
+\begin{DoxyReturn}{Returns}
+True se a apresentação já foi encerrada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_ab247813eed9444dfb53c59235b1f91a9}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a64cd15f7d8434054345243d877ede453}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!isVisible@{isVisible}}
+\index{isVisible@{isVisible}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{isVisible}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool br::ufscar::lince::ginga::wac::state::IElementaryState::isVisible ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a64cd15f7d8434054345243d877ede453}
+
+
+Este permite saber a mídia exibida pelo player está visivel. 
+
+\begin{DoxyReturn}{Returns}
+True se está visivel; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1ElementaryState_a2e7a6f98a2b3a239f9b14f22025fc379}{br::ufscar::lince::ginga::wac::state::ElementaryState}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a6b21cf3f8015ef6cbb839a2fc37e5a85}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!NONE@{NONE}}
+\index{NONE@{NONE}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{NONE}]{\setlength{\rightskip}{0pt plus 5cm}const short {\bf br::ufscar::lince::ginga::wac::state::IElementaryState::NONE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a6b21cf3f8015ef6cbb839a2fc37e5a85}
+
+
+Constante que representa o estado \char`\"{}nenhum\char`\"{} do player. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a66848654431dc226cdd3349f0aa845f1}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!PAUSE@{PAUSE}}
+\index{PAUSE@{PAUSE}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{PAUSE}]{\setlength{\rightskip}{0pt plus 5cm}const short {\bf br::ufscar::lince::ginga::wac::state::IElementaryState::PAUSE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a66848654431dc226cdd3349f0aa845f1}
+
+
+Constante que representa o estado \char`\"{}pausado\char`\"{} do player. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2d598e7badbbbb5460ed5e8204bb878f}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!PLAY@{PLAY}}
+\index{PLAY@{PLAY}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{PLAY}]{\setlength{\rightskip}{0pt plus 5cm}const short {\bf br::ufscar::lince::ginga::wac::state::IElementaryState::PLAY}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_a2d598e7badbbbb5460ed5e8204bb878f}
+
+
+Constante que representa o estado \char`\"{}em execução\char`\"{} do player. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_af53fab5b92d73acc4fb6541d2906d6ce}{
+\index{br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}!STOP@{STOP}}
+\index{STOP@{STOP}!br::ufscar::lince::ginga::wac::state::IElementaryState@{br::ufscar::lince::ginga::wac::state::IElementaryState}}
+\subsubsection[{STOP}]{\setlength{\rightskip}{0pt plus 5cm}const short {\bf br::ufscar::lince::ginga::wac::state::IElementaryState::STOP}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState_af53fab5b92d73acc4fb6541d2906d6ce}
+
+
+Constante que representa o estado \char`\"{}parado\char`\"{} do player. 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{IElementaryState_8h}{IElementaryState.h}\end{DoxyCompactItemize}

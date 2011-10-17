@@ -1,0 +1,3 @@
+OutputStream.o: OutputStream.cpp ../include/OutputStream.h
+OutputStream.cpp :
+../include/OutputStream.h :

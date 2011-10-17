@@ -1,0 +1,86 @@
+                            INSTALL
+
+    Para instalar o GingaCRP (Componente de Replicação de Conteúdo), pode-se proceder de duas formas: utilizar o script de setup.sh ou as instruções contidas neste arquivo para realizar a compilação manualmente.
+
+        Instalar a biblioteca com o arquivo de setup.sh:
+
+$ chmod +x setup.sh
+# ./setup.sh
+
+    O arquivo de setup tentará instalar as bibliotecas com a opção do FFMpeg --enable-shared, que exporta bibliotecas dinâmicas. Este tipo de compilação não funcionou em todas as distribuições testadas (por exemplo, funcionou corretamente na máquina virtual disponibilizada pela Comunidade Ginga - que utiliza a distribuição Fedora, versão 7 -, mas não em uma máquina rodando o Ginga na distribuição Ubuntu, versão 9.04, nem na distribuição Slackware, versão 13).
+    Caso ocorram erros durante a execução, portanto, tente reinstalar o FFMpeg deste pacotes com as mesmas opções, exceto a --enable-shared. Para mais intruções, consulte "Para compilar manualmente" abaixo.
+    Caso se altere o código pós-compilação, o script update.sh pode ser usado para recompilar e instalar todos os códigos.
+
+        Para compilar manualmente:
+
+    A ordem de instalação, após e durante a compilação do GingaFFMpeg deve ser seguida. Antes disso, é irrelevante.
+    Primeiro instale o FFMpeg. Se desejar, você pode instalar a biblioteca Capture Exceptions ou OutputStream primeiro, em qualquer ordem, mas não os demais passos.
+
+    Para instalar o FFMpeg:
+$ cd FFMpeg
+$ ./configure --enable-gpl --enable-fbgrab --enable-static --enable-postproc --enable-pthreads
+$ make
+# make install
+
+    Nota: você pode compilar a biblioteca com outros parâmetros que desejar; por exemplo, para adicionar ou remover codecs. No entanto, a opção --enable-shared pode causar problemas em algumas distribuições.
+
+    Para instalar as bibliotecas do GingaCRC:
+
+    Instalar as bibliotecas de Exceção (obrigatório):
+$ cd Exceptions
+$ ./autogen.sh
+$ make
+# make install
+
+    Instalar as bibliotecas de OutputStream (obrigatório):
+$ cd ../OutputStream
+$ ./autogen.sh
+$ make
+# make install
+
+    Para instalar o GingaFFMpeg (necessário ter instalado as duas bibliotecas anteriores e o FFMpeg contido neste pacote):
+$ cd ginga_ffmpeg
+$ make
+# make install
+ 
+    Caso você deseje testar o GingaFFMpeg:
+$ cd test
+$ make
+$ ./teste
+  Nota: no arquivo main.cpp, existem outras combinações que podem ser testadas.
+
+    A partir deste ponto, podem ser instaladas quaisquer das bibliotecas em qualquer ordem.
+
+    Para instalar a biblioteca ImageCapture:
+$ cd ../ImageCapture
+$ ./autogen.sh
+$ make
+# make install
+  Nota: caso o make falhe, a compilação do arquivo de teste será a provável falha. Para resolve-la, utilize o make install para instalar as bibliotecas e, então, rode novamente o make.
+
+    Se desejar testar:
+$ cd test
+$ ./teste
+
+    Para instalar a biblioteca AudioCapture:
+$ cd ../AudioCapture
+$ ./autogen.sh
+$ make
+# make install
+  Nota: caso o make falhe, a compilação do arquivo de teste será a provável falha. Para resolve-la, utilize o make install para instalar as bibliotecas e, então, rode novamente o make.
+
+    Se desejar testar:
+$ cd test
+$ ./teste
+
+    Para instalar a biblioteca VideoCapture
+$ cd ../VideoCapture
+$ ./autogen.sh
+$ make
+# make install
+  Nota: caso o make falhe, a compilação do arquivo de teste será a provável falha. Para resolve-la, utilize o make install para instalar as bibliotecas e, então, rode novamente o make.
+
+    Se desejar testar:
+$ cd test
+$ ./teste
+

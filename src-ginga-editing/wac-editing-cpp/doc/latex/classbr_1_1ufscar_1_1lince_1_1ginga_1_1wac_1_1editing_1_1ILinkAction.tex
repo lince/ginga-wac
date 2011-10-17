@@ -1,0 +1,111 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction}{
+\section{br::ufscar::lince::ginga::wac::editing::ILinkAction Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction}\index{br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}}
+}
+
+
+Interface pela qual é possivel obter informações sobre os links do módulo Formatter.  
+
+
+
+
+{\ttfamily \#include $<$ILinkAction.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_a20701ec352726a2f7beccbb3cd67e937}{$\sim$ILinkAction} ()
+\begin{DoxyCompactList}\small\item\em Destrói a instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction}{ILinkAction}. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_abf2d8eaacc9fc1d87df7a06edbbc8a93}{getLinkType} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna o tipo de elo. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_a9149a899e903cc72318112ef35a22f5f}{setLinkType} (int type)=0
+\begin{DoxyCompactList}\small\item\em Seta o tipo de elo. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_afc323d02257e3756375d96c0fc6d25b3}{setLinkId} (string linkId)=0
+\begin{DoxyCompactList}\small\item\em Seta o identificador do elo. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_ae7fc2b06a527bfb1a7e1f8485cbc686b}{getLinkId} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna o identificador do elo. \item\end{DoxyCompactList}\item 
+virtual IObjetcMode $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_ab0cd7d6ceaae080691a387a213eb30b0}{getOjetcMode} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna o ExecutionObjet relacionado ao elo. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface pela qual é possivel obter informações sobre os links do módulo Formatter. Esta interface é necessária para se obter informações sobre os links a fim de determinar Se eles devem ou não ser disparados dependendo do modo de exibição atual. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_a20701ec352726a2f7beccbb3cd67e937}{
+\index{br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}!$\sim$ILinkAction@{$\sim$ILinkAction}}
+\index{$\sim$ILinkAction@{$\sim$ILinkAction}!br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}}
+\subsubsection[{$\sim$ILinkAction}]{\setlength{\rightskip}{0pt plus 5cm}virtual br::ufscar::lince::ginga::wac::editing::ILinkAction::$\sim$ILinkAction ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_a20701ec352726a2f7beccbb3cd67e937}
+
+
+Destrói a instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction}{ILinkAction}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_ae7fc2b06a527bfb1a7e1f8485cbc686b}{
+\index{br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}!getLinkId@{getLinkId}}
+\index{getLinkId@{getLinkId}!br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}}
+\subsubsection[{getLinkId}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::editing::ILinkAction::getLinkId ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_ae7fc2b06a527bfb1a7e1f8485cbc686b}
+
+
+Retorna o identificador do elo. 
+
+\begin{DoxyReturn}{Returns}
+Identificador do elo. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_abf2d8eaacc9fc1d87df7a06edbbc8a93}{
+\index{br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}!getLinkType@{getLinkType}}
+\index{getLinkType@{getLinkType}!br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}}
+\subsubsection[{getLinkType}]{\setlength{\rightskip}{0pt plus 5cm}virtual int br::ufscar::lince::ginga::wac::editing::ILinkAction::getLinkType ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_abf2d8eaacc9fc1d87df7a06edbbc8a93}
+
+
+Retorna o tipo de elo. 
+
+\begin{DoxyReturn}{Returns}
+Tipo de Elo. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_ab0cd7d6ceaae080691a387a213eb30b0}{
+\index{br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}!getOjetcMode@{getOjetcMode}}
+\index{getOjetcMode@{getOjetcMode}!br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}}
+\subsubsection[{getOjetcMode}]{\setlength{\rightskip}{0pt plus 5cm}virtual IObjetcMode$\ast$ br::ufscar::lince::ginga::wac::editing::ILinkAction::getOjetcMode ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_ab0cd7d6ceaae080691a387a213eb30b0}
+
+
+Retorna o ExecutionObjet relacionado ao elo. 
+
+\begin{DoxyReturn}{Returns}
+ExectionObject Relacionado ao elo. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_afc323d02257e3756375d96c0fc6d25b3}{
+\index{br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}!setLinkId@{setLinkId}}
+\index{setLinkId@{setLinkId}!br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}}
+\subsubsection[{setLinkId}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ginga::wac::editing::ILinkAction::setLinkId (string {\em linkId})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_afc323d02257e3756375d96c0fc6d25b3}
+
+
+Seta o identificador do elo. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em linkId}]Identificador do elo. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_a9149a899e903cc72318112ef35a22f5f}{
+\index{br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}!setLinkType@{setLinkType}}
+\index{setLinkType@{setLinkType}!br::ufscar::lince::ginga::wac::editing::ILinkAction@{br::ufscar::lince::ginga::wac::editing::ILinkAction}}
+\subsubsection[{setLinkType}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ginga::wac::editing::ILinkAction::setLinkType (int {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction_a9149a899e903cc72318112ef35a22f5f}
+
+
+Seta o tipo de elo. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]Tipo de elo. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ILinkAction_8h}{ILinkAction.h}\end{DoxyCompactItemize}

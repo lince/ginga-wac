@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HoNeS" displayName="LinceUtil" projectFiles="true">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <logicalFolder name="util" displayName="util" projectFiles="true">
+          <itemPath>include/util/BadArgumentException.h</itemPath>
+          <itemPath>include/util/InitializationException.h</itemPath>
+          <itemPath>include/util/LoggerUtil.h</itemPath>
+          <itemPath>include/util/Utils.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="util" displayName="util" projectFiles="true">
+          <itemPath>src/util/BadArgumentException.cpp</itemPath>
+          <itemPath>src/util/InitializationException.cpp</itemPath>
+          <itemPath>src/util/LoggerUtil.cpp</itemPath>
+          <itemPath>src/util/Utils.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="test" displayName="test" projectFiles="true">
+        <itemPath>test/UTest.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos importantes"
+                   projectFiles="false">
+      <itemPath>HoNeS-Makefile.mk</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>autogen.sh</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>HoNeS-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>include</pElem>
+            </incDir>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>.</pElem>
+              <pElem>libs/pupnp</pElem>
+              <pElem>include</pElem>
+              <pElem>include/upnp</pElem>
+              <pElem>include/util</pElem>
+              <pElem>include/ui</pElem>
+              <pElem>include/bluetooth</pElem>
+              <pElem>include/mediarenderer</pElem>
+              <pElem>include/mediaserver</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

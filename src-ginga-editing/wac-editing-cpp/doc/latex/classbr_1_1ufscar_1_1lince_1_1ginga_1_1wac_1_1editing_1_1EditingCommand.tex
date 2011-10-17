@@ -1,0 +1,379 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{
+\section{br::ufscar::lince::ginga::wac::editing::EditingCommand Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+}
+
+
+Classe que encapsula comandos de edição ao vivo do usuário.  
+
+
+
+
+{\ttfamily \#include $<$EditingCommand.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_af99c26529017e3493958d90af9f9142c}{EditingCommand} ()
+\begin{DoxyCompactList}\small\item\em Constrói uma instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand}. \item\end{DoxyCompactList}\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a394301f565410f3142aab8aed54dec76}{EditingCommand} (Entity $\ast$\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a080922002fe90bf99390c026e8e99e52}{entity}, string id)
+\begin{DoxyCompactList}\small\item\em Constrói uma instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand} com alguns atributos setados. \item\end{DoxyCompactList}\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aed488bae30632bb228aa299e82549da9}{EditingCommand} (string id, int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a186e9110f8aae8e562761939a85ee83e}{type})
+\begin{DoxyCompactList}\small\item\em Constrói uma instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand} com alguns atributos setados. \item\end{DoxyCompactList}\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae96e746c3c5c3ac988f6ede8912ccb33}{$\sim$EditingCommand} ()
+\begin{DoxyCompactList}\small\item\em Destrói a instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a3fea7b04ec69d0e6c45488728342859a}{setEntity} (Entity $\ast$\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a080922002fe90bf99390c026e8e99e52}{entity})
+\begin{DoxyCompactList}\small\item\em Seta a entidade NCL adicionada ou removida. \item\end{DoxyCompactList}\item 
+Entity $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a38477c48ab9f7b0cb7ca2fe6cf8b8ca7}{getEntity} ()
+\begin{DoxyCompactList}\small\item\em Obtem a entidade NCL adicionada ou removida pelo comando de edição. \item\end{DoxyCompactList}\item 
+int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aaf9cd154148d3c9022e9aefe21fb1ff9}{getEntityType} ()
+\begin{DoxyCompactList}\small\item\em Obtém o tipo de comando de edição. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aee78eb520e1901f64e526034bcf0ad6c}{setCommandId} (string id)
+\begin{DoxyCompactList}\small\item\em Seta o Identificador do comando de edição. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a014a96ee0631de12234767798f8662c7}{getCommandId} ()
+\begin{DoxyCompactList}\small\item\em Obtém o identificador do comando de edição. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a9d41755f098b545424948a5b70dee7e2}{NONE}
+\begin{DoxyCompactList}\small\item\em Constate que simboliza Comando de Edição Nulo. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a02c282a78048b97f4999a74b5914c4a4}{ADD\_\-RULE}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Regra. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a5dd0dac095cf928d23d71450807949d8}{REMOVE\_\-RULE}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Regra. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ad768e449f54846893a10f6faa233bc8b}{ADD\_\-TRANSITION}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Transição. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae2166c10bacb1c75540a99e5f23e1c6f}{REMOVE\_\-TRANSITION}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Transição. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a78eb46d12ac97acda15cc25cad21e5b7}{ADD\_\-CONNECTOR}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Conector. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a6914135f126f35caef9da25f88c576c7}{REMOVE\_\-CONNECTOR}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Conector. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aaea800af619e90359484819451c9d5dd}{ADD\_\-DESCRIPTOR}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Descritor. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ab477428f9223587f306c0b1bdf46997f}{REMOVE\_\-DESCRIPTOR}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Descritor. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a16171b0dc6db42495b4ebc69b0e71deb}{ADD\_\-NODE}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Nó. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a7071ed34b67f903c7467b272143aec07}{REMOVE\_\-NODE}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Nó. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aa89778b585a254f911e3f767a5cd4923}{ADD\_\-INTERFACE}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Interface. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae24a541d10968b24c85b12d5d7fb9542}{REMOVE\_\-INTERFACE}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Interface. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a0bc520ae2a61697821058d8a54ddd9fa}{ADD\_\-LINK}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Elo. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aa2b6da3065dd18818f8ffaa89ea0cd0b}{REMOVE\_\-LINK}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Elo. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae20dc6b5472ef3d2e917e14d05f34632}{ADD\_\-REGION}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Adicionar Região. \item\end{DoxyCompactList}\item 
+static const int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a44413aeba52921edecd3273abf5eec4e}{REMOVE\_\-REGION}
+\begin{DoxyCompactList}\small\item\em Constante que simboliza Comando de Remover Região. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Entity $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a080922002fe90bf99390c026e8e99e52}{entity}
+\begin{DoxyCompactList}\small\item\em Armazena a entidade NCL removida ou adicionada. \item\end{DoxyCompactList}\item 
+int \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a186e9110f8aae8e562761939a85ee83e}{type}
+\begin{DoxyCompactList}\small\item\em Tipo de edição feita. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a09a15f483ebab3fc72138c656329b293}{commandId}
+\begin{DoxyCompactList}\small\item\em Identificador do comando de edição. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que encapsula comandos de edição ao vivo do usuário. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_af99c26529017e3493958d90af9f9142c}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!EditingCommand@{EditingCommand}}
+\index{EditingCommand@{EditingCommand}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{EditingCommand}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ginga::wac::editing::EditingCommand::EditingCommand ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_af99c26529017e3493958d90af9f9142c}
+
+
+Constrói uma instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand}. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a394301f565410f3142aab8aed54dec76}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!EditingCommand@{EditingCommand}}
+\index{EditingCommand@{EditingCommand}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{EditingCommand}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ginga::wac::editing::EditingCommand::EditingCommand (Entity $\ast$ {\em entity}, \/  string {\em id})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a394301f565410f3142aab8aed54dec76}
+
+
+Constrói uma instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand} com alguns atributos setados. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em entity}]Entidade NCL adicionada ou removida. \item[{\em id}]Identificador do comando de edição. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aed488bae30632bb228aa299e82549da9}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!EditingCommand@{EditingCommand}}
+\index{EditingCommand@{EditingCommand}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{EditingCommand}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ginga::wac::editing::EditingCommand::EditingCommand (string {\em id}, \/  int {\em type})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aed488bae30632bb228aa299e82549da9}
+
+
+Constrói uma instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand} com alguns atributos setados. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]Identificador do comando de edição. \item[{\em type}]Tipo de comando de edição. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae96e746c3c5c3ac988f6ede8912ccb33}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!$\sim$EditingCommand@{$\sim$EditingCommand}}
+\index{$\sim$EditingCommand@{$\sim$EditingCommand}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{$\sim$EditingCommand}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ginga::wac::editing::EditingCommand::$\sim$EditingCommand ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae96e746c3c5c3ac988f6ede8912ccb33}
+
+
+Destrói a instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a014a96ee0631de12234767798f8662c7}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!getCommandId@{getCommandId}}
+\index{getCommandId@{getCommandId}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{getCommandId}]{\setlength{\rightskip}{0pt plus 5cm}string br::ufscar::lince::ginga::wac::editing::EditingCommand::getCommandId ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a014a96ee0631de12234767798f8662c7}
+
+
+Obtém o identificador do comando de edição. 
+
+\begin{DoxyReturn}{Returns}
+Identificador do comando de edição. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a38477c48ab9f7b0cb7ca2fe6cf8b8ca7}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{getEntity}]{\setlength{\rightskip}{0pt plus 5cm}Entity$\ast$ br::ufscar::lince::ginga::wac::editing::EditingCommand::getEntity ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a38477c48ab9f7b0cb7ca2fe6cf8b8ca7}
+
+
+Obtem a entidade NCL adicionada ou removida pelo comando de edição. 
+
+\begin{DoxyReturn}{Returns}
+A entidade NCL. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aaf9cd154148d3c9022e9aefe21fb1ff9}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!getEntityType@{getEntityType}}
+\index{getEntityType@{getEntityType}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{getEntityType}]{\setlength{\rightskip}{0pt plus 5cm}int br::ufscar::lince::ginga::wac::editing::EditingCommand::getEntityType ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aaf9cd154148d3c9022e9aefe21fb1ff9}
+
+
+Obtém o tipo de comando de edição. 
+
+\begin{DoxyReturn}{Returns}
+Tipo do comando do edição. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aee78eb520e1901f64e526034bcf0ad6c}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!setCommandId@{setCommandId}}
+\index{setCommandId@{setCommandId}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{setCommandId}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::editing::EditingCommand::setCommandId (string {\em id})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aee78eb520e1901f64e526034bcf0ad6c}
+
+
+Seta o Identificador do comando de edição. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]Identificador do comando de edição. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a3fea7b04ec69d0e6c45488728342859a}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!setEntity@{setEntity}}
+\index{setEntity@{setEntity}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{setEntity}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::editing::EditingCommand::setEntity (Entity $\ast$ {\em entity})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a3fea7b04ec69d0e6c45488728342859a}
+
+
+Seta a entidade NCL adicionada ou removida. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em entity}]Entidade NCL adicionada ou removida. \end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a78eb46d12ac97acda15cc25cad21e5b7}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-CONNECTOR@{ADD\_\-CONNECTOR}}
+\index{ADD\_\-CONNECTOR@{ADD\_\-CONNECTOR}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-CONNECTOR}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-CONNECTOR}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a78eb46d12ac97acda15cc25cad21e5b7}
+
+
+Constante que simboliza Comando de Adicionar Conector. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aaea800af619e90359484819451c9d5dd}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-DESCRIPTOR@{ADD\_\-DESCRIPTOR}}
+\index{ADD\_\-DESCRIPTOR@{ADD\_\-DESCRIPTOR}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-DESCRIPTOR}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aaea800af619e90359484819451c9d5dd}
+
+
+Constante que simboliza Comando de Adicionar Descritor. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aa89778b585a254f911e3f767a5cd4923}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-INTERFACE@{ADD\_\-INTERFACE}}
+\index{ADD\_\-INTERFACE@{ADD\_\-INTERFACE}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-INTERFACE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-INTERFACE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aa89778b585a254f911e3f767a5cd4923}
+
+
+Constante que simboliza Comando de Adicionar Interface. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a0bc520ae2a61697821058d8a54ddd9fa}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-LINK@{ADD\_\-LINK}}
+\index{ADD\_\-LINK@{ADD\_\-LINK}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-LINK}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-LINK}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a0bc520ae2a61697821058d8a54ddd9fa}
+
+
+Constante que simboliza Comando de Adicionar Elo. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a16171b0dc6db42495b4ebc69b0e71deb}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-NODE@{ADD\_\-NODE}}
+\index{ADD\_\-NODE@{ADD\_\-NODE}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-NODE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-NODE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a16171b0dc6db42495b4ebc69b0e71deb}
+
+
+Constante que simboliza Comando de Adicionar Nó. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae20dc6b5472ef3d2e917e14d05f34632}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-REGION@{ADD\_\-REGION}}
+\index{ADD\_\-REGION@{ADD\_\-REGION}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-REGION}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-REGION}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae20dc6b5472ef3d2e917e14d05f34632}
+
+
+Constante que simboliza Comando de Adicionar Região. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a02c282a78048b97f4999a74b5914c4a4}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-RULE@{ADD\_\-RULE}}
+\index{ADD\_\-RULE@{ADD\_\-RULE}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-RULE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-RULE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a02c282a78048b97f4999a74b5914c4a4}
+
+
+Constante que simboliza Comando de Adicionar Regra. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ad768e449f54846893a10f6faa233bc8b}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!ADD\_\-TRANSITION@{ADD\_\-TRANSITION}}
+\index{ADD\_\-TRANSITION@{ADD\_\-TRANSITION}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{ADD\_\-TRANSITION}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::ADD\_\-TRANSITION}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ad768e449f54846893a10f6faa233bc8b}
+
+
+Constante que simboliza Comando de Adicionar Transição. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a09a15f483ebab3fc72138c656329b293}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!commandId@{commandId}}
+\index{commandId@{commandId}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{commandId}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::commandId}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a09a15f483ebab3fc72138c656329b293}
+
+
+Identificador do comando de edição. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a080922002fe90bf99390c026e8e99e52}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!entity@{entity}}
+\index{entity@{entity}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{entity}]{\setlength{\rightskip}{0pt plus 5cm}Entity$\ast$ {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::entity}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a080922002fe90bf99390c026e8e99e52}
+
+
+Armazena a entidade NCL removida ou adicionada. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a9d41755f098b545424948a5b70dee7e2}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!NONE@{NONE}}
+\index{NONE@{NONE}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{NONE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::NONE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a9d41755f098b545424948a5b70dee7e2}
+
+
+Constate que simboliza Comando de Edição Nulo. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a6914135f126f35caef9da25f88c576c7}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-CONNECTOR@{REMOVE\_\-CONNECTOR}}
+\index{REMOVE\_\-CONNECTOR@{REMOVE\_\-CONNECTOR}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-CONNECTOR}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-CONNECTOR}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a6914135f126f35caef9da25f88c576c7}
+
+
+Constante que simboliza Comando de Remover Conector. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ab477428f9223587f306c0b1bdf46997f}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-DESCRIPTOR@{REMOVE\_\-DESCRIPTOR}}
+\index{REMOVE\_\-DESCRIPTOR@{REMOVE\_\-DESCRIPTOR}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-DESCRIPTOR}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-DESCRIPTOR}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ab477428f9223587f306c0b1bdf46997f}
+
+
+Constante que simboliza Comando de Remover Descritor. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae24a541d10968b24c85b12d5d7fb9542}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-INTERFACE@{REMOVE\_\-INTERFACE}}
+\index{REMOVE\_\-INTERFACE@{REMOVE\_\-INTERFACE}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-INTERFACE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-INTERFACE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae24a541d10968b24c85b12d5d7fb9542}
+
+
+Constante que simboliza Comando de Remover Interface. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aa2b6da3065dd18818f8ffaa89ea0cd0b}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-LINK@{REMOVE\_\-LINK}}
+\index{REMOVE\_\-LINK@{REMOVE\_\-LINK}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-LINK}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-LINK}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_aa2b6da3065dd18818f8ffaa89ea0cd0b}
+
+
+Constante que simboliza Comando de Remover Elo. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a7071ed34b67f903c7467b272143aec07}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-NODE@{REMOVE\_\-NODE}}
+\index{REMOVE\_\-NODE@{REMOVE\_\-NODE}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-NODE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-NODE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a7071ed34b67f903c7467b272143aec07}
+
+
+Constante que simboliza Comando de Remover Nó. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a44413aeba52921edecd3273abf5eec4e}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-REGION@{REMOVE\_\-REGION}}
+\index{REMOVE\_\-REGION@{REMOVE\_\-REGION}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-REGION}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-REGION}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a44413aeba52921edecd3273abf5eec4e}
+
+
+Constante que simboliza Comando de Remover Região. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a5dd0dac095cf928d23d71450807949d8}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-RULE@{REMOVE\_\-RULE}}
+\index{REMOVE\_\-RULE@{REMOVE\_\-RULE}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-RULE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-RULE}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a5dd0dac095cf928d23d71450807949d8}
+
+
+Constante que simboliza Comando de Remover Regra. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae2166c10bacb1c75540a99e5f23e1c6f}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!REMOVE\_\-TRANSITION@{REMOVE\_\-TRANSITION}}
+\index{REMOVE\_\-TRANSITION@{REMOVE\_\-TRANSITION}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{REMOVE\_\-TRANSITION}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::REMOVE\_\-TRANSITION}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_ae2166c10bacb1c75540a99e5f23e1c6f}
+
+
+Constante que simboliza Comando de Remover Transição. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a186e9110f8aae8e562761939a85ee83e}{
+\index{br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}!type@{type}}
+\index{type@{type}!br::ufscar::lince::ginga::wac::editing::EditingCommand@{br::ufscar::lince::ginga::wac::editing::EditingCommand}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf br::ufscar::lince::ginga::wac::editing::EditingCommand::type}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand_a186e9110f8aae8e562761939a85ee83e}
+
+
+Tipo de edição feita. 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{EditingCommand_8h}{EditingCommand.h}\end{DoxyCompactItemize}

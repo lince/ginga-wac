@@ -1,0 +1,72 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider}{
+\section{br::ufscar::lince::ginga::wac::state::IContextProvider Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider}\index{br::ufscar::lince::ginga::wac::state::IContextProvider@{br::ufscar::lince::ginga::wac::state::IContextProvider}}
+}
+
+
+Esta classe virtual deve ser implementada por classes que são capazes de informar o contexto de uma apresentação NCL.  
+
+
+
+
+{\ttfamily \#include $<$IContextProvider.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a586f6b390cf22fb589aa3b6fb661dc49}{$\sim$IContextProvider} ()
+\begin{DoxyCompactList}\small\item\em Destrutor Genérico. \item\end{DoxyCompactList}\item 
+virtual vector$<$ string $>$ $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a1912620e1f978f7e12dba01b0c31af5c}{getPropertyNames} ()=0
+\begin{DoxyCompactList}\small\item\em Este método é utilizado pelo \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager} para obter os nomes das propriedades existentes no contexto da aplicação. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a0777035084d9b444f13b85b71cda6927}{getPropertyValue} (string attributeId)=0
+\begin{DoxyCompactList}\small\item\em Este método é utilizado pelo \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager} apra obter o valor das propriedades existentes no contexto da aplicação. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Esta classe virtual deve ser implementada por classes que são capazes de informar o contexto de uma apresentação NCL. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a586f6b390cf22fb589aa3b6fb661dc49}{
+\index{br::ufscar::lince::ginga::wac::state::IContextProvider@{br::ufscar::lince::ginga::wac::state::IContextProvider}!$\sim$IContextProvider@{$\sim$IContextProvider}}
+\index{$\sim$IContextProvider@{$\sim$IContextProvider}!br::ufscar::lince::ginga::wac::state::IContextProvider@{br::ufscar::lince::ginga::wac::state::IContextProvider}}
+\subsubsection[{$\sim$IContextProvider}]{\setlength{\rightskip}{0pt plus 5cm}virtual br::ufscar::lince::ginga::wac::state::IContextProvider::$\sim$IContextProvider ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a586f6b390cf22fb589aa3b6fb661dc49}
+
+
+Destrutor Genérico. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a1912620e1f978f7e12dba01b0c31af5c}{
+\index{br::ufscar::lince::ginga::wac::state::IContextProvider@{br::ufscar::lince::ginga::wac::state::IContextProvider}!getPropertyNames@{getPropertyNames}}
+\index{getPropertyNames@{getPropertyNames}!br::ufscar::lince::ginga::wac::state::IContextProvider@{br::ufscar::lince::ginga::wac::state::IContextProvider}}
+\subsubsection[{getPropertyNames}]{\setlength{\rightskip}{0pt plus 5cm}virtual vector$<$string$>$$\ast$ br::ufscar::lince::ginga::wac::state::IContextProvider::getPropertyNames ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a1912620e1f978f7e12dba01b0c31af5c}
+
+
+Este método é utilizado pelo \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager} para obter os nomes das propriedades existentes no contexto da aplicação. 
+
+\begin{DoxyReturn}{Returns}
+Um vetor contento os nomes das propriedades existentes no contexto da aplicação 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a0777035084d9b444f13b85b71cda6927}{
+\index{br::ufscar::lince::ginga::wac::state::IContextProvider@{br::ufscar::lince::ginga::wac::state::IContextProvider}!getPropertyValue@{getPropertyValue}}
+\index{getPropertyValue@{getPropertyValue}!br::ufscar::lince::ginga::wac::state::IContextProvider@{br::ufscar::lince::ginga::wac::state::IContextProvider}}
+\subsubsection[{getPropertyValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IContextProvider::getPropertyValue (string {\em attributeId})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider_a0777035084d9b444f13b85b71cda6927}
+
+
+Este método é utilizado pelo \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager} apra obter o valor das propriedades existentes no contexto da aplicação. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em attributeId}]Nome da propriedade da qual o valor será recuperado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor da propriedade representado através de um string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{IContextProvider_8h}{IContextProvider.h}\end{DoxyCompactItemize}

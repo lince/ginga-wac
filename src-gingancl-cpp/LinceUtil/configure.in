@@ -1,0 +1,108 @@
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(LinceUtil, 1.0)
+AM_CONFIG_HEADER(utilconfig.h)
+AM_MAINTAINER_MODE
+
+###################################
+# Large files support.
+###################################
+
+AC_TYPE_SIZE_T
+AC_TYPE_OFF_T
+AC_DEFINE([_FILE_OFFSET_BITS], [64], [file offset size])
+AC_DEFINE(_LARGEFILE_SOURCE, 1, [large file support.])
+AC_DEFINE(_LARGE_FILE_SOURCE, 1, [large file support.])
+AC_DEFINE(_LARGEFILE64_SOURCE, 1, [large file support.])
+AC_DEFINE(__USE_LARGEFILE64, 1, [large file support.])
+
+##############################
+# Maximum buffer length.
+##############################
+
+AC_DEFINE(MAX_BUFFER, [4*1024*1024], [maximum internal buffer length])
+
+##############################
+# Checks for programs.
+##############################
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX([g++])
+AC_PROG_LIBTOOL
+
+CXXFLAGS="-fPIC $CXXFLAGS"
+CFLAGS="-fPIC $CFLAGS"
+
+##############################
+# Building paths
+##############################
+
+CPATH="/usr/include:/usr/local/include:/usr/local/include/ginga:$CPATH"
+LIBRARY_PATH="/lib:/usr/lib:/usr/local/lib:/usr/local/lib/ginga:$LIBRARY_PATH"
+LD_LIBRARY_PATH="/lib:/usr/lib:/usr/local/lib:/usr/local/lib/ginga:$LD_LIBRARY_PATH"
+PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
+export CPATH LIBRARY_PATH LD_LIBRARY_PATH PKG_CONFIG_PAT
+
+##############################
+# Checks for header files.
+##############################
+
+AC_HEADER_STDC
+AC_CHECK_HEADERS([arpa/inet.h net/if.h sys/socket.h sys/ioctl.h time.h stdio.h dirent.h fcntl.h ctype.h])
+
+##############################
+# Dynamic libraries
+##############################
+
+UTIL_LIBS=""
+
+##############################
+# Checks for log4cxx libraries.
+##############################
+AC_CHECK_HEADERS([log4cxx/logger.h],
+  AC_CHECK_LIB([log4cxx],[main],
+   [
+     LOG4CXX_LIBS='-llog4cxx'
+     AC_DEFINE(HAVE_LOG4CXX, 1, [Define to 1 if you have log4cxx support.])
+   ]
+  )
+)
+
+UTIL_LIBS="$UTIL_LIBS $LOG4CXX_LIBS"
+
+##############################
+# Dynamic libraries
+##############################
+
+AC_SUBST(UTIL_LIBS)
+
+##############################
+# Checks for typedefs, structures, and compiler characteristics.
+##############################
+
+AC_C_CONST
+AC_C_INLINE
+AC_STRUCT_TM
+
+##############################
+# Checks for Network functions
+##############################
+
+AC_CHECK_FUNCS([socket])
+AC_CHECK_FUNCS([inet_ntop])
+AC_CHECK_FUNCS([inet_pton])
+
+##############################
+# Checks for C++ stream.
+##############################
+
+AC_CHECK_HEADERS([sstream])
+
+##############################
+# Makefiles
+##############################
+
+AC_OUTPUT([
+Makefile
+bin/Makefile
+test/Makefile
+])

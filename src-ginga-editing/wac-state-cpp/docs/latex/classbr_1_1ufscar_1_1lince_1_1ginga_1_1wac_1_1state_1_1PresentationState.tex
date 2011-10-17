@@ -1,0 +1,152 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState}{
+\section{br::ufscar::lince::ginga::wac::state::PresentationState Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState}\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+}
+
+
+Representa o estado da apresentação como um todo em um dado momento.  
+
+
+{\ttfamily \#include $<$PresentationState.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aa48f61ac6a0cf382182bd6fb4f548b87}{
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aa48f61ac6a0cf382182bd6fb4f548b87}{PresentationState} ()}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aa48f61ac6a0cf382182bd6fb4f548b87}
+
+\begin{DoxyCompactList}\small\item\em Constrói uma instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState}{PresentationState}. \item\end{DoxyCompactList}\item 
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a324581a9a822f53cf7365321ae35f2ec}{
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a324581a9a822f53cf7365321ae35f2ec}{$\sim$PresentationState} ()}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a324581a9a822f53cf7365321ae35f2ec}
+
+\begin{DoxyCompactList}\small\item\em Destrói a instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState}{PresentationState}. \item\end{DoxyCompactList}\item 
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a12bbbe813bb759be0df00d2dd11bdafa}{
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a12bbbe813bb759be0df00d2dd11bdafa}{lockInstance} ()}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a12bbbe813bb759be0df00d2dd11bdafa}
+
+\begin{DoxyCompactList}\small\item\em Trava a instância, impedindo que ela seja modificada. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aa288af47b8342244e574e36a3564a933}{setStateMap} (map$<$ string, PlayerState $\ast$ $>$ $\ast$nStateMap, map$<$ string, string $>$ $\ast$nDescMap)
+\begin{DoxyCompactList}\small\item\em Seta os mapas que contém os estados dos players da apresentação. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aadc7632e1bff7b0c2680a5193679e1d9}{setDcoumentName} (string name)
+\begin{DoxyCompactList}\small\item\em Seta o nome do documento NCL. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a127842284622579c23ec1d6ce974fe8f}{setPrivateBaseName} (string name)
+\begin{DoxyCompactList}\small\item\em Seta o nome da base privada. \item\end{DoxyCompactList}\item 
+vector$<$ string $>$ $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_ad1d032b0daa21d879958a0bdfa3ab50e}{getPlayersNames} ()
+\begin{DoxyCompactList}\small\item\em Retorna o nome de todos os players da apresentação atual. \item\end{DoxyCompactList}\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PlayerStateWac}{PlayerStateWac} $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aec08164fc9e175efb9e9b1658fbefafb}{getPlayerState} (string name)
+\begin{DoxyCompactList}\small\item\em Retorna o estado de um determinado Player. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a676f5c8a7880fe134f516ddbb4e94750}{getMediaDescriptor} (string name)
+\begin{DoxyCompactList}\small\item\em Retorna o Descritor associado ao nó de mídia de um player. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a287ab3031a3c0d2cf3fe065db40753cd}{getPresentationName} ()
+\begin{DoxyCompactList}\small\item\em Retorna o nome completo da apresentação. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a2b47b9354872ae240b80f15ec346aee7}{getDocumentName} ()
+\begin{DoxyCompactList}\small\item\em Retorna o nome do documento NCL. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_ad1a6ffea4ce3b37974c58d3aeeb10eed}{getPrivateBaseName} ()
+\begin{DoxyCompactList}\small\item\em Retorna o nome da base privada. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representa o estado da apresentação como um todo em um dado momento. Esta classe agrupa o estado de todos os players de uma apresentação NCL além de outras informações mais gerais da apresentação, representado o estado de uma apresentação NCL em um dado momento. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a2b47b9354872ae240b80f15ec346aee7}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!getDocumentName@{getDocumentName}}
+\index{getDocumentName@{getDocumentName}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{getDocumentName}]{\setlength{\rightskip}{0pt plus 5cm}string br::ufscar::lince::ginga::wac::state::PresentationState::getDocumentName ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a2b47b9354872ae240b80f15ec346aee7}
+
+
+Retorna o nome do documento NCL. \begin{DoxyReturn}{Returns}
+String contendo o nome do documento NCL. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a676f5c8a7880fe134f516ddbb4e94750}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!getMediaDescriptor@{getMediaDescriptor}}
+\index{getMediaDescriptor@{getMediaDescriptor}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{getMediaDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}string br::ufscar::lince::ginga::wac::state::PresentationState::getMediaDescriptor (string {\em name})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a676f5c8a7880fe134f516ddbb4e94750}
+
+
+Retorna o Descritor associado ao nó de mídia de um player. 
+\begin{DoxyParams}{Parameters}
+\item[{\em Nome}]do Player relacionado ao nó de mídia. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nome do descritor associado ao nó de mídia. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_ad1d032b0daa21d879958a0bdfa3ab50e}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!getPlayersNames@{getPlayersNames}}
+\index{getPlayersNames@{getPlayersNames}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{getPlayersNames}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$$\ast$ br::ufscar::lince::ginga::wac::state::PresentationState::getPlayersNames ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_ad1d032b0daa21d879958a0bdfa3ab50e}
+
+
+Retorna o nome de todos os players da apresentação atual. \begin{DoxyReturn}{Returns}
+Instância de vector contendo todos os nomes dos players da apresentação atual. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aec08164fc9e175efb9e9b1658fbefafb}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!getPlayerState@{getPlayerState}}
+\index{getPlayerState@{getPlayerState}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{getPlayerState}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PlayerStateWac}$\ast$ br::ufscar::lince::ginga::wac::state::PresentationState::getPlayerState (string {\em name})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aec08164fc9e175efb9e9b1658fbefafb}
+
+
+Retorna o estado de um determinado Player. 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Nome do player o qual se deseja obter o estado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PlayerStateWac}{PlayerStateWac} com o estado atual do player. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a287ab3031a3c0d2cf3fe065db40753cd}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!getPresentationName@{getPresentationName}}
+\index{getPresentationName@{getPresentationName}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{getPresentationName}]{\setlength{\rightskip}{0pt plus 5cm}string br::ufscar::lince::ginga::wac::state::PresentationState::getPresentationName ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a287ab3031a3c0d2cf3fe065db40753cd}
+
+
+Retorna o nome completo da apresentação. \begin{DoxyReturn}{Returns}
+String contendo o nome completo da apresentação; 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_ad1a6ffea4ce3b37974c58d3aeeb10eed}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!getPrivateBaseName@{getPrivateBaseName}}
+\index{getPrivateBaseName@{getPrivateBaseName}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{getPrivateBaseName}]{\setlength{\rightskip}{0pt plus 5cm}string br::ufscar::lince::ginga::wac::state::PresentationState::getPrivateBaseName ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_ad1a6ffea4ce3b37974c58d3aeeb10eed}
+
+
+Retorna o nome da base privada. \begin{DoxyReturn}{Returns}
+String contendo o nome da base privada. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aadc7632e1bff7b0c2680a5193679e1d9}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!setDcoumentName@{setDcoumentName}}
+\index{setDcoumentName@{setDcoumentName}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{setDcoumentName}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::state::PresentationState::setDcoumentName (string {\em name})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aadc7632e1bff7b0c2680a5193679e1d9}
+
+
+Seta o nome do documento NCL. 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Nome do documento NCL. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a127842284622579c23ec1d6ce974fe8f}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!setPrivateBaseName@{setPrivateBaseName}}
+\index{setPrivateBaseName@{setPrivateBaseName}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{setPrivateBaseName}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::state::PresentationState::setPrivateBaseName (string {\em name})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a127842284622579c23ec1d6ce974fe8f}
+
+
+Seta o nome da base privada. 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Nome da base privada. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aa288af47b8342244e574e36a3564a933}{
+\index{br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}!setStateMap@{setStateMap}}
+\index{setStateMap@{setStateMap}!br::ufscar::lince::ginga::wac::state::PresentationState@{br::ufscar::lince::ginga::wac::state::PresentationState}}
+\subsubsection[{setStateMap}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::state::PresentationState::setStateMap (map$<$ string, PlayerState $\ast$ $>$ $\ast$ {\em nStateMap}, \/  map$<$ string, string $>$ $\ast$ {\em nDescMap})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_aa288af47b8342244e574e36a3564a933}
+
+
+Seta os mapas que contém os estados dos players da apresentação. 
+\begin{DoxyParams}{Parameters}
+\item[{\em nStateMap}]Mapa que relaciona os nomes dos players com seus estados. \item[{\em nDescMap}]Mapa que relaciona os nomes dos players com seus descritores. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PresentationState_8h}{PresentationState.h}\end{DoxyCompactItemize}

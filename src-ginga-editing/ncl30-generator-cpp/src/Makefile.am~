@@ -1,0 +1,18 @@
+# set the include path found by configure
+INCLUDES = -I/usr/local/include/directfb/ -I/usr/local/include/ginga/ \
+        $(all_includes)
+
+
+LIBS =
+
+# the library search path.
+localLibdir = /usr/local/lib/ginga
+
+libncl30generator_so_LDFLAGS = -Wl,-soname,libncl30generator.so -shared \
+-L/usr/local/lib -L/usr/local/lib/ginga
+localLib_PROGRAMS = libncl30generator.so
+
+
+
+libncl30_so_LDADD = -ltelemidiautil -lncl30
+

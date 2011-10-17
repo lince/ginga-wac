@@ -1,0 +1,104 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{
+\section{br::ufscar::lince::ginga::wac::state::StateManager Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}\index{br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}}
+}
+
+
+Classe responsável por manter e informar o estado da apresentação.  
+
+
+
+
+{\ttfamily \#include $<$StateManager.h$>$}
+
+Inheritance diagram for br::ufscar::lince::ginga::wac::state::StateManager:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_aa02a5c2cc3e5933a60225dc1b67e75e8}{addStateProvider} (string id, \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IStateProvider}{IStateProvider} $\ast$stateProvider)
+\begin{DoxyCompactList}\small\item\em Adiciona um player a lista de players monitorados pela \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager}. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState}{IPresentationState} $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_affbdaf15d59f7df0aa182944818c3ad8}{getPresentationState} ()
+\begin{DoxyCompactList}\small\item\em Retorna o estado da apresentação no atual momento. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_a118df2766ab99574653b4f45d1ea75fd}{setContextProvider} (\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IContextProvider}{IContextProvider} $\ast$contextProvider)
+\begin{DoxyCompactList}\small\item\em Este método permite registrar a instância responsável por fornecer o contexto da apresentação NCL. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager} $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_a7875cddb02bd5dfa72539234438b3a7e}{getInstance} ()
+\begin{DoxyCompactList}\small\item\em Permite obter acesso a instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável por manter e informar o estado da apresentação. Esta classe é constantemente informada das mudanças topológicas nos players da apresentação NCL em execução, o que permite a ela gerar informar o estada da apresentação NCL como um todo. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_aa02a5c2cc3e5933a60225dc1b67e75e8}{
+\index{br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}!addStateProvider@{addStateProvider}}
+\index{addStateProvider@{addStateProvider}!br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}}
+\subsubsection[{addStateProvider}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ginga::wac::state::StateManager::addStateProvider (string {\em id}, \/  {\bf IStateProvider} $\ast$ {\em stateProvider})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_aa02a5c2cc3e5933a60225dc1b67e75e8}
+
+
+Adiciona um player a lista de players monitorados pela \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]Identificador do Player dentro da Maquina de Apresentação NCL. \item[{\em playerAd}]Instância de PlayerAdapter que será monitorado por \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager}. \end{DoxyParams}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IStateManager_a739db8ceb6f56a110aa46bd272ea0956}{br::ufscar::lince::ginga::wac::state::IStateManager}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_a7875cddb02bd5dfa72539234438b3a7e}{
+\index{br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}}
+\subsubsection[{getInstance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf StateManager}$\ast$ br::ufscar::lince::ginga::wac::state::StateManager::getInstance ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_a7875cddb02bd5dfa72539234438b3a7e}
+
+
+Permite obter acesso a instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager}. 
+
+\begin{DoxyReturn}{Returns}
+Instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager}{StateManager}. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_affbdaf15d59f7df0aa182944818c3ad8}{
+\index{br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}!getPresentationState@{getPresentationState}}
+\index{getPresentationState@{getPresentationState}!br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}}
+\subsubsection[{getPresentationState}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf IPresentationState}$\ast$ br::ufscar::lince::ginga::wac::state::StateManager::getPresentationState ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_affbdaf15d59f7df0aa182944818c3ad8}
+
+
+Retorna o estado da apresentação no atual momento. 
+
+\begin{DoxyReturn}{Returns}
+instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState}{PresentationState} contento o estado atual da apresentação. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IStateManager_a8fe894ac51f00b4d3633d93135678e0c}{br::ufscar::lince::ginga::wac::state::IStateManager}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_a118df2766ab99574653b4f45d1ea75fd}{
+\index{br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}!setContextProvider@{setContextProvider}}
+\index{setContextProvider@{setContextProvider}!br::ufscar::lince::ginga::wac::state::StateManager@{br::ufscar::lince::ginga::wac::state::StateManager}}
+\subsubsection[{setContextProvider}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ginga::wac::state::StateManager::setContextProvider ({\bf IContextProvider} $\ast$ {\em contextProvider})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1StateManager_a118df2766ab99574653b4f45d1ea75fd}
+
+
+Este método permite registrar a instância responsável por fornecer o contexto da apresentação NCL. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em contextProvider}]A instância que fornecerá o contexto da apresentação NCL. \end{DoxyParams}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IStateManager_a3e9493dcb1e1dbfd6171252fb2edca8d}{br::ufscar::lince::ginga::wac::state::IStateManager}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{StateManager_8h}{StateManager.h}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode}{
+\section{br::ufscar::lince::ginga::wac::editing::IMode Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode}\index{br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}}
+}
+
+
+Interface que permite a manipulação dos modos de exibição.  
+
+
+
+
+{\ttfamily \#include $<$IMode.h$>$}
+
+Inheritance diagram for br::ufscar::lince::ginga::wac::editing::IMode:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_ab6b8c4de92a5f940f8c726f327f9aa55}{enterClientPresentationMode} ()=0
+\begin{DoxyCompactList}\small\item\em Força a entrada no de exibição do cliente. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a36555fd659519e30880b9d3f4644d257}{exitClientPresentationMode} ()=0
+\begin{DoxyCompactList}\small\item\em Força a saida do modo de exibição do cliente. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a5c0f479717a32e10c4810abdfe4e03d4}{runModeAction} (\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ILinkAction}{ILinkAction} $\ast$linkAction)=0
+\begin{DoxyCompactList}\small\item\em Verifica se o determinado elo deve ou não ser disparado dependendo do modo de exibição atual. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a5048bc35fa6ade1b514f79467519b52f}{setScheduler} (\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter}{ISchedulerAdapter} $\ast$scheduler)=0
+\begin{DoxyCompactList}\small\item\em Seta a instãncia de Scheculer que será utilizada para matar objetos. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface que permite a manipulação dos modos de exibição. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_ab6b8c4de92a5f940f8c726f327f9aa55}{
+\index{br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}!enterClientPresentationMode@{enterClientPresentationMode}}
+\index{enterClientPresentationMode@{enterClientPresentationMode}!br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}}
+\subsubsection[{enterClientPresentationMode}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool br::ufscar::lince::ginga::wac::editing::IMode::enterClientPresentationMode ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_ab6b8c4de92a5f940f8c726f327f9aa55}
+
+
+Força a entrada no de exibição do cliente. 
+
+\begin{DoxyReturn}{Returns}
+True se entrou no modo cliente; False se já estava no modo cliente. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ModeManager_a5f62cca336317833ac6565a0acc779e6}{br::ufscar::lince::ginga::wac::editing::ModeManager}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a36555fd659519e30880b9d3f4644d257}{
+\index{br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}!exitClientPresentationMode@{exitClientPresentationMode}}
+\index{exitClientPresentationMode@{exitClientPresentationMode}!br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}}
+\subsubsection[{exitClientPresentationMode}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool br::ufscar::lince::ginga::wac::editing::IMode::exitClientPresentationMode ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a36555fd659519e30880b9d3f4644d257}
+
+
+Força a saida do modo de exibição do cliente. 
+
+\begin{DoxyReturn}{Returns}
+True se saiu do modo cliente; False se não estava no modo cliente. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ModeManager_a7d095b1de1af73c3296f4b6a29c6f08f}{br::ufscar::lince::ginga::wac::editing::ModeManager}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a5c0f479717a32e10c4810abdfe4e03d4}{
+\index{br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}!runModeAction@{runModeAction}}
+\index{runModeAction@{runModeAction}!br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}}
+\subsubsection[{runModeAction}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool br::ufscar::lince::ginga::wac::editing::IMode::runModeAction ({\bf ILinkAction} $\ast$ {\em linkAction})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a5c0f479717a32e10c4810abdfe4e03d4}
+
+
+Verifica se o determinado elo deve ou não ser disparado dependendo do modo de exibição atual. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em linkAction}]Elo que será testado quanto a ser ou não disparado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o elo deve ser disparado; False Caso contrário. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ModeManager_a5456384c5ce5e3d7114429e5e28273b8}{br::ufscar::lince::ginga::wac::editing::ModeManager}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a5048bc35fa6ade1b514f79467519b52f}{
+\index{br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}!setScheduler@{setScheduler}}
+\index{setScheduler@{setScheduler}!br::ufscar::lince::ginga::wac::editing::IMode@{br::ufscar::lince::ginga::wac::editing::IMode}}
+\subsubsection[{setScheduler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ginga::wac::editing::IMode::setScheduler ({\bf ISchedulerAdapter} $\ast$ {\em scheduler})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IMode_a5048bc35fa6ade1b514f79467519b52f}
+
+
+Seta a instãncia de Scheculer que será utilizada para matar objetos. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em scheduler}]Instância de FormatterScheduler. \end{DoxyParams}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ModeManager_ac73004e6c04b17ce1673e1fc2a179561}{br::ufscar::lince::ginga::wac::editing::ModeManager}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{IMode_8h}{IMode.h}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+                TO DO
+
+                COMPONENTE DE REPLICAÇÃO DE CONTEÚDO (CRC)
+
+-> GingaFFMpeg:
+         TODO:
+           -> criar API para controle das threads.
+           -> velocidade da captura: checar cmdutils.
+           -> revisar coleta de lixo.
+         FIXME:
+           -> acertar algumas exceções.
+         XXX:
+           -> criar instalação com Autotools.
+         BUGS:
+
+-> APIs:
+     -> ImageCapture:
+         TODO:
+           -> adicionar OutputStreams.
+         FIXME:
+           -> acertar permissões de métodos.
+         XXX:
+           -> aumentar velocidade da captura.
+         BUGS:
+
+     -> AudioCapture:
+         TODO:
+           -> adicionar OutputStreams.
+           -> corrigir chamada da captura pelo objeto GingaFFMpeg.
+         FIXME:
+           -> acertar permissões de métodos.
+         XXX:
+           -> adicionar escolha do dispositivo de áudio.
+         BUGS:
+
+     -> VideoCapture:
+         TODO:
+           -> adicionar OutputStreams.
+           -> corrigir chamada da captura pelo objeto GingaFFMpeg.
+         FIXME:
+           -> acertar permissões de métodos.
+         XXX:
+           -> adicionar escolha do dispositivo de áudio.
+           -> adicionar escolha do dispositivo de vídeo.
+         BUGS:
+           -> uma segunda captura resulta em falha de segmentação. Talvez problema de áudio.

@@ -1,0 +1,214 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState}{
+\section{br::ufscar::lince::ginga::wac::state::IPresentationState Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState}\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+}
+
+
+Esta classe genérica serve de interface como as apliações que desejam obter informações sobre o estado da aplicação.  
+
+
+
+
+{\ttfamily \#include $<$IPresentationState.h$>$}
+
+Inheritance diagram for br::ufscar::lince::ginga::wac::state::IPresentationState:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a4e3e2eac0d45ddcf17526115f9a7ef84}{$\sim$IPresentationState} ()
+\item 
+virtual vector$<$ string $>$ $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_ac3ba6e82191af041b1bc4320ddaf0ca5}{getPlayersNames} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna o nome de todos os players da apresentação atual. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IElementaryState}{IElementaryState} $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a42e36ac35404e13df2b3df4f2da614a1}{getElementaryState} (string name)=0
+\begin{DoxyCompactList}\small\item\em Retorna o estado de um determinado Player. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a4a8d2526ea16319ea1efc19928ffe028}{getMediaDescriptor} (string name)=0
+\begin{DoxyCompactList}\small\item\em Retorna o Descritor associado ao nó de mídia de um player. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a939e322cd15e49680f227bfc6b9ded9d}{getPresentationName} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna o nome completo da apresentação. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a20c06c68a1db0160932abf7d6aa4967c}{getDocumentName} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna o nome do documento NCL. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a53e509fcb89622fa57b299526f96f728}{getPrivateBaseName} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna o nome da base privada. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a148a58eee3e6f96ae226f8360696d944}{toString} ()=0
+\begin{DoxyCompactList}\small\item\em Retorna uma string contento o resumo das principais informações relativas ao estado da apresentação presentados pelo objeto. \item\end{DoxyCompactList}\item 
+virtual vector$<$ string $>$ $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a3ec5c1d54f31461e1a3e81a54fefaa87}{getContextPropertyNames} ()=0
+\begin{DoxyCompactList}\small\item\em Este método retorna todos os nomes das propriedades relativas ao contexto da apresentação. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a3d16c8c6c2c90ef84313414072d953cf}{getContextPropertyValue} (string attributeId)=0
+\begin{DoxyCompactList}\small\item\em Este método retorna o valor de uma determinada propriedade do contexto da apresentação através de uma string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Esta classe genérica serve de interface como as apliações que desejam obter informações sobre o estado da aplicação. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a4e3e2eac0d45ddcf17526115f9a7ef84}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!$\sim$IPresentationState@{$\sim$IPresentationState}}
+\index{$\sim$IPresentationState@{$\sim$IPresentationState}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{$\sim$IPresentationState}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ginga::wac::state::IPresentationState::$\sim$IPresentationState ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a4e3e2eac0d45ddcf17526115f9a7ef84}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a3ec5c1d54f31461e1a3e81a54fefaa87}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getContextPropertyNames@{getContextPropertyNames}}
+\index{getContextPropertyNames@{getContextPropertyNames}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getContextPropertyNames}]{\setlength{\rightskip}{0pt plus 5cm}virtual vector$<$string$>$$\ast$ br::ufscar::lince::ginga::wac::state::IPresentationState::getContextPropertyNames ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a3ec5c1d54f31461e1a3e81a54fefaa87}
+
+
+Este método retorna todos os nomes das propriedades relativas ao contexto da apresentação. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em Um}]vetor contento o nome das propriedades relativas ao contexto. \end{DoxyParams}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_ab5f9e22342f390d01e54ca51f8a85609}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a3d16c8c6c2c90ef84313414072d953cf}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getContextPropertyValue@{getContextPropertyValue}}
+\index{getContextPropertyValue@{getContextPropertyValue}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getContextPropertyValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IPresentationState::getContextPropertyValue (string {\em attributeId})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a3d16c8c6c2c90ef84313414072d953cf}
+
+
+Este método retorna o valor de uma determinada propriedade do contexto da apresentação através de uma string. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em attributeId}]O identificador da propriedade do contexto. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor da propriedade representada através de uma string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a2931ba17e6dcd1352382fee289352f4b}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a20c06c68a1db0160932abf7d6aa4967c}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getDocumentName@{getDocumentName}}
+\index{getDocumentName@{getDocumentName}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getDocumentName}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IPresentationState::getDocumentName ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a20c06c68a1db0160932abf7d6aa4967c}
+
+
+Retorna o nome do documento NCL. 
+
+\begin{DoxyReturn}{Returns}
+String contendo o nome do documento NCL. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a90a8797bdaffaed86c5a686652fea889}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a42e36ac35404e13df2b3df4f2da614a1}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getElementaryState@{getElementaryState}}
+\index{getElementaryState@{getElementaryState}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getElementaryState}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf IElementaryState}$\ast$ br::ufscar::lince::ginga::wac::state::IPresentationState::getElementaryState (string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a42e36ac35404e13df2b3df4f2da614a1}
+
+
+Retorna o estado de um determinado Player. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]Nome do player o qual se deseja obter o estado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instância de PlayerStateWac com o estado atual do player. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a460f75f353ea3508dacdbd2a29bd537e}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a4a8d2526ea16319ea1efc19928ffe028}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getMediaDescriptor@{getMediaDescriptor}}
+\index{getMediaDescriptor@{getMediaDescriptor}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getMediaDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IPresentationState::getMediaDescriptor (string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a4a8d2526ea16319ea1efc19928ffe028}
+
+
+Retorna o Descritor associado ao nó de mídia de um player. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em Nome}]do Player relacionado ao nó de mídia. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nome do descritor associado ao nó de mídia. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a5f3306aca36ba9aac7c43d27f6f29ad9}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_ac3ba6e82191af041b1bc4320ddaf0ca5}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getPlayersNames@{getPlayersNames}}
+\index{getPlayersNames@{getPlayersNames}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getPlayersNames}]{\setlength{\rightskip}{0pt plus 5cm}virtual vector$<$string$>$$\ast$ br::ufscar::lince::ginga::wac::state::IPresentationState::getPlayersNames ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_ac3ba6e82191af041b1bc4320ddaf0ca5}
+
+
+Retorna o nome de todos os players da apresentação atual. 
+
+\begin{DoxyReturn}{Returns}
+Instância de vector contendo todos os nomes dos players da apresentação atual. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a82bc0879c2e2d6c6eb48ffaeee043bac}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a939e322cd15e49680f227bfc6b9ded9d}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getPresentationName@{getPresentationName}}
+\index{getPresentationName@{getPresentationName}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getPresentationName}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IPresentationState::getPresentationName ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a939e322cd15e49680f227bfc6b9ded9d}
+
+
+Retorna o nome completo da apresentação. 
+
+\begin{DoxyReturn}{Returns}
+String contendo o nome completo da apresentação; 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_af4149387468f9a7180c036f4fdce03bd}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a53e509fcb89622fa57b299526f96f728}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!getPrivateBaseName@{getPrivateBaseName}}
+\index{getPrivateBaseName@{getPrivateBaseName}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{getPrivateBaseName}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IPresentationState::getPrivateBaseName ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a53e509fcb89622fa57b299526f96f728}
+
+
+Retorna o nome da base privada. 
+
+\begin{DoxyReturn}{Returns}
+String contendo o nome da base privada. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a5b280537bd03a744eb41807859f01413}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a148a58eee3e6f96ae226f8360696d944}{
+\index{br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}!toString@{toString}}
+\index{toString@{toString}!br::ufscar::lince::ginga::wac::state::IPresentationState@{br::ufscar::lince::ginga::wac::state::IPresentationState}}
+\subsubsection[{toString}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ginga::wac::state::IPresentationState::toString ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1IPresentationState_a148a58eee3e6f96ae226f8360696d944}
+
+
+Retorna uma string contento o resumo das principais informações relativas ao estado da apresentação presentados pelo objeto. 
+
+\begin{DoxyReturn}{Returns}
+String com o resumo do estado da apresentaçaõ. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1state_1_1PresentationState_a00ec06809774af254532488cc1559c15}{br::ufscar::lince::ginga::wac::state::PresentationState}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{IPresentationState_8h}{IPresentationState.h}\end{DoxyCompactItemize}

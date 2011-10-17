@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ncl id="exemplo02" xmlns="http://www.ncl.org.br/NCL3.0/profileName">
+<head>
+<regionBase device="systemScreen(0)" >
+<region id="rgTV" height="100%" width="100%" >
+<region id="rgTitulo1" left ="50%" top ="50%" height="20%" width="20%" />
+<region id="rgVideo1" height="50%" width="50%" />
+</region>
+
+</regionBase>
+
+<descriptorBase>
+<descriptor id="dTitulo1" region="rgTitulo1" />
+<descriptor id="dVideo1" region="rgVideo1" ><descriptorParam name="soundLevel" value="1" />
+</descriptor>
+
+</descriptorBase>
+
+<connectorBase>
+<importBase alias="connectors" documentURI="connectorBase.ncl"/><causalConnector id="wacCannonicalConnector">
+<compoundCondition operator="and" >
+<simpleCondition role="onBegin" eventType="presentation" transition="starts" max="unbounded" />
+</compoundCondition>
+<compoundAction operator="par" >
+<simpleAction role="start" eventType="presentation" min="0" max="unbounded" qualifier="par" />
+<simpleAction role="stop" eventType="presentation" min="0" max="unbounded" qualifier="par" />
+<simpleAction role="pause" eventType="presentation" min="0" max="unbounded" qualifier="par" />
+</compoundAction>
+
+</causalConnector>
+<causalConnector id="wacCannonicalConnector">
+<compoundCondition operator="and" >
+<simpleCondition role="onBegin" eventType="presentation" transition="starts" max="unbounded" />
+</compoundCondition>
+<compoundAction operator="par" >
+<simpleAction role="start" eventType="presentation" min="0" max="unbounded" qualifier="par" />
+<simpleAction role="stop" eventType="presentation" min="0" max="unbounded" qualifier="par" />
+<simpleAction role="pause" eventType="presentation" min="0" max="unbounded" qualifier="par" />
+</compoundAction>
+
+</causalConnector>
+</connectorBase>
+
+</head>
+<body>
+<port id="pInicio" component="video1" interface="video1" />
+
+<media id="titulo1" type="image/png" src="/misc/ncl30/live/media/amostra1.png" descriptor="dTitulo1"  >
+<area id="titulo1" begin="0s" />
+<area id="area1" begin="5s" />
+</media>
+<media id="pause1" type="image/png" src="/misc/ncl30/live/media/amostra1.png" descriptor="dTitulo1"  >
+<area id="pause1" begin="0s" />
+</media>
+<media id="video1" type="video/x-msvideo" src="/misc/ncl30/live/media/video1.avi" descriptor="dVideo1"  >
+<area id="video1" begin="0s" />
+<area id="area1" begin="5.005s" />
+</media>
+<link id="lVideo1Titulo1Start" xconnector="connectors#onBegin1StartN" >
+<bind component="video1" role="onBegin" interface="video1" />
+
+<bind component="titulo1" role="start" interface="titulo1" />
+
+</link>
+
+<link id="link1" xconnector="wacCannonicalConnector" >
+<bind component="titulo1" role="onBegin" interface="area1" descriptor="dTitulo1" />
+
+<bind component="video1" role="onBegin" interface="area1" descriptor="dVideo1" />
+
+</link>
+
+</body>
+
+ </ncl>

@@ -1,0 +1,7 @@
+DeviceCommunication.o: interface/device/DeviceCommunication.cpp \
+  interface/device/../../../../include/io/interface/device/DeviceCommunication.h \
+  interface/device/../../../../include/io/interface/device/IDeviceCommunication.h
+
+interface/device/../../../../include/io/interface/device/DeviceCommunication.h:
+
+interface/device/../../../../include/io/interface/device/IDeviceCommunication.h:

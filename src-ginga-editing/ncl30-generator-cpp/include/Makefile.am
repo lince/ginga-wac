@@ -1,0 +1,18 @@
+METASOURCES = AUTO
+LIBS =
+
+generatorIncludedir = /usr/local/include/ginga/ncl/generator
+generatorInclude_HEADERS = AnchorGenerator.h IntervalAnchorGenerator.h AssessmentStatementGenerator.h  \
+		LayoutRegionGenerator.h AttributeAssessmentGenerator.h BindGenerator.h \
+		CausalConnectorGenerator.h NclDocumentGenerator.h CausalLinkGenerator.h \
+	        NclGenerator.h CircleSpatialAnchorGenerator.h ParameterGenerator.h \
+		CompoundActionGenerator.h PortGenerator.h CompoundConditionGenerator.h \
+		PropertyAnchorGenerator.h CompoundStatementGenerator.h RectangleSpatialAnchorGenerator.h \
+		ConnectorBaseGenerator.h RegionBaseGenerator.h ContentNodeGenerator.h \
+		ContextNodeGenerator.h SimpleActionGenerator.h \
+		DescriptorBaseGenerator.h SimpleConditionGenerator.h DescriptorGenerator.h \
+		TextAnchorGenerator.h Generable.h ValueAssessmentGenerator.h NclFileGenerator.h \
+		DescriptorSwitchGenerator.h TransitionBaseGenerator.h TransitionGenerator.h \
+		GeneratorUtil.h RuleBaseGenerator.h SimpleRuleGenerator.h CompositeRuleGenerator.h \
+		SwitchNodeGenerator.h SwitchPortGenerator.h LabeledAnchorGenerator.h
+

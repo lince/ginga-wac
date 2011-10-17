@@ -1,0 +1,127 @@
+/******************************************************************************
+Este arquivo eh parte da implementacao do ambiente declarativo do middleware
+Ginga (Ginga-NCL).
+
+Copyright (C) 2009 UFSCar/Lince, Todos os Direitos Reservados.
+
+Este programa eh software livre; voce pode redistribui-lo e/ou modificah-lo sob
+os termos da Licenca Publica Geral GNU versao 2 conforme publicada pela Free
+Software Foundation.
+
+Este programa eh distribuido na expectativa de que seja util, porem, SEM
+NENHUMA GARANTIA; nem mesmo a garantia implicita de COMERCIABILIDADE OU
+ADEQUACAO A UMA FINALIDADE ESPECIFICA. Consulte a Licenca Publica Geral do
+GNU versao 2 para mais detalhes.
+ 
+Voce deve ter recebido uma copia da Licenca Publica Geral do GNU versao 2 junto
+com este programa; se nao, escreva para a Free Software Foundation, Inc., no
+endereco 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.
+
+Para maiores informacoes:
+lince@dc.ufscar.br
+http://www.ncl.org.br
+http://www.ginga.org.br
+http://lince.dc.ufscar.br
+******************************************************************************
+This file is part of the declarative environment of middleware Ginga (Ginga-NCL)
+
+Copyright (C) 2009 UFSCar/Lince, Todos os Direitos Reservados.
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License version 2 as published by
+the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License version 2 for more
+details.
+ 
+You should have received a copy of the GNU General Public License version 2
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+
+For further information contact:
+lince@dc.ufscar.br
+http://www.ncl.org.br
+http://www.ginga.org.br
+http://lince.dc.ufscar.br
+*******************************************************************************/
+
+
+/*#include "ncl/Anchor.h"
+using namespace ::br::pucrio::telemidia::ncl::interfaces;
+*/
+
+#include "AnchorGenerator.h"
+#include "AssessmentStatementGenerator.h"
+#include "AttributeAssessmentGenerator.h"
+#include "BindGenerator.h"
+#include "CausalConnectorGenerator.h"
+#include "CausalLinkGenerator.h"
+#include "CircleSpatialAnchorGenerator.h"
+#include "CompoundActionGenerator.h"
+#include "CompoundConditionGenerator.h" 
+#include "CompoundStatementGenerator.h" 
+#include "ConnectorBaseGenerator.h"
+#include "ContentNodeGenerator.h" 
+#include "ContextNodeGenerator.h"
+#include "DescriptorBaseGenerator.h" 
+#include "DescriptorGenerator.h"  
+#include "IntervalAnchorGenerator.h" 
+#include "LayoutRegionGenerator.h"  
+#include "NclDocumentGenerator.h"  
+#include "ParameterGenerator.h"  
+#include "PortGenerator.h" 
+#include "PropertyAnchorGenerator.h" 
+#include "RectangleSpatialAnchorGenerator.h" 
+#include "RegionBaseGenerator.h" 
+#include "SimpleActionGenerator.h" 
+#include "SimpleConditionGenerator.h" 
+#include "TextAnchorGenerator.h"
+#include "ValueAssessmentGenerator.h" 
+
+namespace br {
+namespace ufscar {
+namespace dc {
+namespace lince {
+namespace ncl {
+namespace generate {
+
+class NclGenerator {
+	public:
+		static AnchorGenerator*  getGenerableInstance(Anchor* anchor);
+		static AssessmentStatementGenerator*  getGenerableInstance(AssessmentStatement* assessmentStatement);
+		static AtributeAssessmentGenerator* getGenerableInstance(AttributeAssessment* attributeAssessment);
+		static BindGenerator* getGenerableInstance(Bind* bind);
+		static CausalConnectorGenerator*  getGenerableInstance(CausalConnector* causalConnector);
+		static CausalLinkGenerator*  getGenerableInstance(CausalLink* causalLink);
+		static CircleSpatialAnchorGenerator*  getGenerableInstance(CircleSpatialAnchor* circleSpatialAnchor);
+		static CompoundActionGenerator* getGenerableInstance(CompoundAction* compoundAction);
+		static CompoundConditionGenerator*  getGenerableInstance(CompoundCondition* compoundContition);
+		static CompoundStatementGenerator*  getGenerableInstance(CompoundStatement* compoundStatement);
+		static ConnectorBaseGenerator* getGenerableInstance(ConnectorBase* connectorBase);
+		static ContentNodeGenerator*  getGenerableInstance(ContentNode* contentNode);
+		static ContextNodeGenerator* getGenerableInstance(ContextNode* contextNode);
+		static DescriptorBaseGenerator*  getGenerableInstance(DescriptorBase* descriptorBase);
+		static DescriptorGenerator*  getGenerableInstance(Descriptor* descriptor);
+		static IntervalAnchorGenerator*  getGenerableInstance(IntervalAnchor* intervalAnchor);
+		static LayoutRegionGenerator*  getGenerableInstance(LayoutRegion* layoutRegion);
+		static NclDocumentGenerator*  getGenerableInstance(NclDocument* nclDocument);
+		static ParameterGenerator*  getGenerableInstance(Parameter* parameter);
+		static PortGenerator* getGenerableInstance(Port* port);
+		static PropertyAnchorGenerator* getGenerableInstance(PropertyAnchor* propertyAnchor);
+		static RectangleSpatialAnchorGenerator*  getGenerableInstance(RectangleSpatialAnchor* rectangleSpatialAnchor);
+		static RegionBaseGenerator* getGenerableInstance(RegionBase* reginBase);
+		static SimpleActionGenerator* getGenerableInstance(SimpleAction* simpleAction);
+		static SimpleConditionGenerator*  getGenerableInstance(SimpleCondition* simpleCondition);
+		static TextAnchorGenerator*  getGenerableInstance(TextAnchor* textAnchor);
+		static ValueAssessmentGenerator*  getGenerableInstance(ValueAssessment* valueAssessment);
+};
+
+}
+}
+}
+}
+}
+}
+

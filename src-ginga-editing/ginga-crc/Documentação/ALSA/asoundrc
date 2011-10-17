@@ -1,0 +1,11 @@
+#NOTE: This filename should be changed from asoundrc to .asoundrc
+
+pcm.!default {
+    type hw
+    card 0
+}
+ctl.!default {
+    type hw
+    card 0
+}
+

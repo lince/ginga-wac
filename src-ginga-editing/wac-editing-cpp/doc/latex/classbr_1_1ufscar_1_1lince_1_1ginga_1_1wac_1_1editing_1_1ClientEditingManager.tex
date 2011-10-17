@@ -1,0 +1,763 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{
+\section{br::ufscar::lince::ginga::wac::editing::ClientEditingManager Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+}
+
+
+Permite a aplicações desenvolvidas pelo usuário realizar anotações e edições ao vivo em um documento NCL Esta classe basicamente facilita a criação de aplicações de anotação e edição ao vivo do lado cliente, pois faz parte das tarefas necessárias para aplicações deste tipo, além de permitir retroceder de alterações erroneas e fazer um log das alterações.  
+
+
+
+
+{\ttfamily \#include $<$ClientEditingManager.h$>$}
+
+Inheritance diagram for br::ufscar::lince::ginga::wac::editing::ClientEditingManager:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a963d65786d4e563fdb5e091c2aa3215b}{$\sim$ClientEditingManager} ()
+\begin{DoxyCompactList}\small\item\em Destrói a instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager}. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a554a556985da2aaa32fe3c705d957705}{addRegion} (string regionId, LayoutRegion $\ast$layoutRegion)
+\begin{DoxyCompactList}\small\item\em Adiciona uma Região na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a4f4a856d51b586312be91b376ec0d8f3}{addRegion} (string regionId, string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona uma Região na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a21f7109da6d0eb0b54629547513ff69e}{addRule} (Rule $\ast$rule)
+\begin{DoxyCompactList}\small\item\em Adiciona uma Regra na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_abbf0ba0c717c55996fac349a88f78b6f}{addRule} (string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona uma Regra na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a5b363245776a5a71bd3c7628dcf91f7e}{removeRule} (string ruleId)
+\begin{DoxyCompactList}\small\item\em Remove uma regra da Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_af872bea61e20e96b7ef968e24627d8c7}{addTransition} (Transition $\ast$transition)
+\begin{DoxyCompactList}\small\item\em Adiciona uma transição na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a474cdd2a429ab96cb5376264ff38fa31}{addTransition} (string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona uma transição na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a6aebcca439720cc2c9b69d6b7b5c45c7}{removeTransition} (string transitionId)
+\begin{DoxyCompactList}\small\item\em Remove uma transição da Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_afbc2f133a39eff4008bba3817f8c76a1}{addConnector} (Connector $\ast$connector)
+\begin{DoxyCompactList}\small\item\em Adiciona um Conector na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a62f5c2e221cba63f7a47c3a8ce1d154f}{addConnector} (string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona um Conector na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a5b6ddc8a6259b07eae8f2c2f03dcdfaa}{removeConnector} (string connectorId)
+\begin{DoxyCompactList}\small\item\em Remove um conector da Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad43d65396682df3c57e131e5531e7e4d}{addDescriptor} (GenericDescriptor $\ast$descriptor)
+\begin{DoxyCompactList}\small\item\em Adiciona um Descritor na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ab6fd5b9535b8d6e377aab7b7af4c2902}{addDescriptor} (string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona um Descritor na Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a9b25cb3580c52ddb8147ede64ec53077}{removeDescriptor} (string descriptorId)
+\begin{DoxyCompactList}\small\item\em Remove um descritor da Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a8e27f52402bb58a3e49d63b28652b2b9}{addNode} (string compositeId, Node $\ast$node)
+\begin{DoxyCompactList}\small\item\em Adiciona um Nó à Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa7ddb3cd14fd26fe7e4edf8b3024fdb7}{addNode} (string compositeId, string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona um Nó à Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7e6eaecc65141d2660bdb1b1c33c421f}{addInterface} (string nodeId, InterfacePoint $\ast$interface)
+\begin{DoxyCompactList}\small\item\em Adiciona uma Interface à Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a1565a7f4347ad519fc405455c603fb3c}{addInterface} (string nodeId, string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona uma Interface à Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a23d60db841bf10edd6266de52613b9b2}{removeInterface} (string nodeId, string interfaceId)
+\begin{DoxyCompactList}\small\item\em Remove uma interface da Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a53cb5ddc1e425c7f03c7aacff140223c}{addLink} (string compositeId, Link $\ast$link)
+\begin{DoxyCompactList}\small\item\em Adiciona um elo à Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a88c07d75d150d08724ec077fa54f2aeb}{addLink} (string compositeId, string xml)
+\begin{DoxyCompactList}\small\item\em Adiciona um elo à Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a11e5f1029545aa4c0435094cc59477cb}{removeLink} (string compositeId, string linkId)
+\begin{DoxyCompactList}\small\item\em Remove um elo da Versão Cliente do Documento NCL em execução. \item\end{DoxyCompactList}\item 
+NclDocument $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a49b1b969381d54583a4c0ae61756ba7b}{getCurrentDocument} ()
+\begin{DoxyCompactList}\small\item\em Retorno a instância que representa o documento NCl que esta sendo apresentado. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7094577521bafedebcd7edafe753774f}{undoLastEditing} (int n=1)
+\begin{DoxyCompactList}\small\item\em Permite desfazer as ultimas edições realizadas por aplicações do cliente. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_af64ee7af65344bf8c0eba75c33a9e29c}{setCurrentDocument} (NclDocument $\ast$nclDocument)
+\begin{DoxyCompactList}\small\item\em Método utilizado para setar o documento ncl atualmente em execução. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a6a57699073fe086e75d16ffd96a5bfc3}{setClientPrivateBaseId} (string id)
+\begin{DoxyCompactList}\small\item\em Seta o nome da base privada do cliente. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ae80834b5a0aa0ffdfb399a85f92b9bd5}{setBroadcasterPrivateBaseId} (string id)
+\begin{DoxyCompactList}\small\item\em Seta o nome da base privada da emissora. \item\end{DoxyCompactList}\item 
+void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a07b41ca3cb59e493972d73c8f8e724b8}{setIFormatterAdpater} (\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter}{IFormatterAdapter} $\ast$\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a49d8d70cee155e1d15c5da2cbb107777}{formatter})
+\begin{DoxyCompactList}\small\item\em Seta a instância do formatter que irá receber os comandos de edição ao vivo. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a968a7252444aa05bb471f47e4c554d19}{saveCurrentFile} (string fileName)
+\begin{DoxyCompactList}\small\item\em Salva o Versão Cliente do documento NCL atualmente em execução em um arquivo. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa305ed84ccf3c46501623df103d7a7e0}{getCurrentDocumentPath} ()
+\begin{DoxyCompactList}\small\item\em Retorna o caminho do documento NCL atual. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager} $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad72c33ccec250438af9b2c489634c42d}{getInstance} ()
+\begin{DoxyCompactList}\small\item\em Permite acessar a instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad67459adf66064e713ba4fbf1870ce26}{CLIENT\_\-LINK\_\-PREFIX}
+\begin{DoxyCompactList}\small\item\em Prefixo anexado aos identificadores das entidades NCL adicionadas pelo cliente. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IFormatterAdapter}{IFormatterAdapter} $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a49d8d70cee155e1d15c5da2cbb107777}{formatter}
+\begin{DoxyCompactList}\small\item\em Interface utilizada para comunicação com o Formatter do módulo Formatter. \item\end{DoxyCompactList}\item 
+list$<$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand} $\ast$ $>$ $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa89f63aad52acdd1fc2502ebe6193be8}{editingCommands}
+\begin{DoxyCompactList}\small\item\em Lista que contém todas os comandos de edição enviados por aplicações cliente. \item\end{DoxyCompactList}\item 
+map$<$ string, \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1EditingCommand}{EditingCommand} $\ast$ $>$ $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a01857fae3b654789d6a6eb665bf9e058}{mapCommands}
+\begin{DoxyCompactList}\small\item\em Mapa que relaciona os comandos de edições com as Ids das entidades NCL adicionadas ou removidas. \item\end{DoxyCompactList}\item 
+NclDocument $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a9a5b80d7a04837b9796f3ef87972d99a}{currentDocument}
+\begin{DoxyCompactList}\small\item\em Instância do documento NCL atualmente em execução. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7610c9f79a41fb3cd819cffdd8c3d576}{clientPrivateBaseId}
+\begin{DoxyCompactList}\small\item\em Nome da Base Privada dos documentos do Cliente. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ae6f42fa31a4a78d07977ee83561ed60d}{broadcasterPrivateBaseId}
+\begin{DoxyCompactList}\small\item\em Nome da Base Privada dos documentos da emissora. \item\end{DoxyCompactList}\item 
+string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a259109a4e6e19ad1cc8b193f99140c7d}{documentPath}
+\begin{DoxyCompactList}\small\item\em Caminho onde esta gravado o documento NCL atualmente em execução. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager} $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a127cda95b090ee9d020494d2c958be62}{\_\-instance}
+\begin{DoxyCompactList}\small\item\em Instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Permite a aplicações desenvolvidas pelo usuário realizar anotações e edições ao vivo em um documento NCL Esta classe basicamente facilita a criação de aplicações de anotação e edição ao vivo do lado cliente, pois faz parte das tarefas necessárias para aplicações deste tipo, além de permitir retroceder de alterações erroneas e fazer um log das alterações. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a963d65786d4e563fdb5e091c2aa3215b}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!$\sim$ClientEditingManager@{$\sim$ClientEditingManager}}
+\index{$\sim$ClientEditingManager@{$\sim$ClientEditingManager}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{$\sim$ClientEditingManager}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ginga::wac::editing::ClientEditingManager::$\sim$ClientEditingManager ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a963d65786d4e563fdb5e091c2aa3215b}
+
+
+Destrói a instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a62f5c2e221cba63f7a47c3a8ce1d154f}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addConnector@{addConnector}}
+\index{addConnector@{addConnector}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addConnector}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addConnector (string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a62f5c2e221cba63f7a47c3a8ce1d154f}
+
+
+Adiciona um Conector na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em xml}]Código xml do conector que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o conector foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a531eb37bc22963dcb2feeed0e07591bd}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_afbc2f133a39eff4008bba3817f8c76a1}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addConnector@{addConnector}}
+\index{addConnector@{addConnector}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addConnector}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addConnector (Connector $\ast$ {\em connector})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_afbc2f133a39eff4008bba3817f8c76a1}
+
+
+Adiciona um Conector na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em connector}]Instância que representa o conector que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o conector foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_ac3ce7f9f55bc61cb7166b741a73e77d9}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ab6fd5b9535b8d6e377aab7b7af4c2902}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addDescriptor@{addDescriptor}}
+\index{addDescriptor@{addDescriptor}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addDescriptor (string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ab6fd5b9535b8d6e377aab7b7af4c2902}
+
+
+Adiciona um Descritor na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em xml}]Código xml do Descritor que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o Descritor foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_af7aa3b95abda814fbf7cadbd277dc2c1}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad43d65396682df3c57e131e5531e7e4d}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addDescriptor@{addDescriptor}}
+\index{addDescriptor@{addDescriptor}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addDescriptor (GenericDescriptor $\ast$ {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad43d65396682df3c57e131e5531e7e4d}
+
+
+Adiciona um Descritor na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]Instância que representa o Descritor que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o Descritor foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a8fb8afeaa96087d789b6b0efd9571853}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a1565a7f4347ad519fc405455c603fb3c}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addInterface@{addInterface}}
+\index{addInterface@{addInterface}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addInterface}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addInterface (string {\em nodeId}, \/  string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a1565a7f4347ad519fc405455c603fb3c}
+
+
+Adiciona uma Interface à Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nodeId}]Idenitificador do nó onde esta nova interface será adicionada. \item[{\em xml}]Código xml da interface que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a interface foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_af60b6d775c412012b85a219311bbc4d8}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7e6eaecc65141d2660bdb1b1c33c421f}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addInterface@{addInterface}}
+\index{addInterface@{addInterface}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addInterface}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addInterface (string {\em nodeId}, \/  InterfacePoint $\ast$ {\em interface})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7e6eaecc65141d2660bdb1b1c33c421f}
+
+
+Adiciona uma Interface à Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nodeId}]Idenitificador do nó onde esta nova interface será adicionada. \item[{\em interface}]Instância que representa a interface que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a interface foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a7a733528927ed22d232ae58e0539b1eb}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a88c07d75d150d08724ec077fa54f2aeb}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addLink@{addLink}}
+\index{addLink@{addLink}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addLink}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addLink (string {\em compositeId}, \/  string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a88c07d75d150d08724ec077fa54f2aeb}
+
+
+Adiciona um elo à Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em compositeId}]Idenitificador do nó de contexto onde este novo elo será adicionado. \item[{\em xml}]Código xml do elo que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o elo foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_aa9d2c5d6522cc5428abc2a3231299b74}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a53cb5ddc1e425c7f03c7aacff140223c}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addLink@{addLink}}
+\index{addLink@{addLink}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addLink}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addLink (string {\em compositeId}, \/  Link $\ast$ {\em link})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a53cb5ddc1e425c7f03c7aacff140223c}
+
+
+Adiciona um elo à Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em compositeId}]Idenitificador do nó de contexto onde este novo elo será adicionado. \item[{\em link}]Instancia que representa o elo que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o elo foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a74829dbd18d200ef2522a0e228e20a10}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa7ddb3cd14fd26fe7e4edf8b3024fdb7}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addNode@{addNode}}
+\index{addNode@{addNode}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addNode}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addNode (string {\em compositeId}, \/  string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa7ddb3cd14fd26fe7e4edf8b3024fdb7}
+
+
+Adiciona um Nó à Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em compositeId}]Idenitificador do nó onde este novo nó será adicionado. \item[{\em xml}]Código xml do nó que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o nó foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_ad101947701dbbef3d365d92ae385ec46}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a8e27f52402bb58a3e49d63b28652b2b9}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addNode@{addNode}}
+\index{addNode@{addNode}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addNode}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addNode (string {\em compositeId}, \/  Node $\ast$ {\em node})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a8e27f52402bb58a3e49d63b28652b2b9}
+
+
+Adiciona um Nó à Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em compositeId}]Idenitificador do nó onde este novo nó será adicionado. \item[{\em node}]Instância que representa o nó que será adiconado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o nó foi adicionado; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_ad8662a9f157872a4cbe7ed0da9baf3fb}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a4f4a856d51b586312be91b376ec0d8f3}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addRegion@{addRegion}}
+\index{addRegion@{addRegion}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addRegion}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addRegion (string {\em regionId}, \/  string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a4f4a856d51b586312be91b376ec0d8f3}
+
+
+Adiciona uma Região na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em regionId}]Identificador da Região onde a nova Região será adiconada. \item[{\em xml}]Código xml da Região que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a região foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_afaa30256c70e59a36820317d203869fc}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a554a556985da2aaa32fe3c705d957705}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addRegion@{addRegion}}
+\index{addRegion@{addRegion}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addRegion}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addRegion (string {\em regionId}, \/  LayoutRegion $\ast$ {\em layoutRegion})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a554a556985da2aaa32fe3c705d957705}
+
+
+Adiciona uma Região na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em regionId}]Identificador da Região onde a nova Região será adiconada. \item[{\em layoutRegion}]Instância que representa a Região que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a região foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a159d8e1b676431ee5439ad932f07a6bd}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_abbf0ba0c717c55996fac349a88f78b6f}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addRule@{addRule}}
+\index{addRule@{addRule}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addRule}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addRule (string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_abbf0ba0c717c55996fac349a88f78b6f}
+
+
+Adiciona uma Regra na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em xml}]Código xml da Regra que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a regra foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a9268c1aa4301692ad9ed3c17e97d5f45}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a21f7109da6d0eb0b54629547513ff69e}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addRule@{addRule}}
+\index{addRule@{addRule}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addRule}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addRule (Rule $\ast$ {\em rule})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a21f7109da6d0eb0b54629547513ff69e}
+
+
+Adiciona uma Regra na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rule}]Instância que representa a Regra que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a regra foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_abc156e111b7741a7f55c28b835614178}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a474cdd2a429ab96cb5376264ff38fa31}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addTransition@{addTransition}}
+\index{addTransition@{addTransition}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addTransition}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addTransition (string {\em xml})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a474cdd2a429ab96cb5376264ff38fa31}
+
+
+Adiciona uma transição na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em xml}]Código xml da transição que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a transição foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_ab485ec1908e00b24e451f138446885af}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_af872bea61e20e96b7ef968e24627d8c7}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!addTransition@{addTransition}}
+\index{addTransition@{addTransition}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{addTransition}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::addTransition (Transition $\ast$ {\em transition})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_af872bea61e20e96b7ef968e24627d8c7}
+
+
+Adiciona uma transição na Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transition}]Instância que representa a transição que será adiconada. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a transição foi adicionada; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a8de701b01f8095605897a83002ea9fb0}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a49b1b969381d54583a4c0ae61756ba7b}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!getCurrentDocument@{getCurrentDocument}}
+\index{getCurrentDocument@{getCurrentDocument}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{getCurrentDocument}]{\setlength{\rightskip}{0pt plus 5cm}NclDocument$\ast$ br::ufscar::lince::ginga::wac::editing::ClientEditingManager::getCurrentDocument ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a49b1b969381d54583a4c0ae61756ba7b}
+
+
+Retorno a instância que representa o documento NCl que esta sendo apresentado. 
+
+\begin{DoxyReturn}{Returns}
+Documento NCL que está sendo apresentado. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a72ba6d8611de7d1b8569a5b5d68e4fb9}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa305ed84ccf3c46501623df103d7a7e0}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!getCurrentDocumentPath@{getCurrentDocumentPath}}
+\index{getCurrentDocumentPath@{getCurrentDocumentPath}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{getCurrentDocumentPath}]{\setlength{\rightskip}{0pt plus 5cm}string br::ufscar::lince::ginga::wac::editing::ClientEditingManager::getCurrentDocumentPath ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa305ed84ccf3c46501623df103d7a7e0}
+
+
+Retorna o caminho do documento NCL atual. 
+
+\begin{DoxyReturn}{Returns}
+Uma String contendo o caminho do documento NCL atual. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad72c33ccec250438af9b2c489634c42d}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{getInstance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf ClientEditingManager}$\ast$ br::ufscar::lince::ginga::wac::editing::ClientEditingManager::getInstance ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad72c33ccec250438af9b2c489634c42d}
+
+
+Permite acessar a instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager}. 
+
+\begin{DoxyReturn}{Returns}
+Instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager}. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a5b6ddc8a6259b07eae8f2c2f03dcdfaa}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!removeConnector@{removeConnector}}
+\index{removeConnector@{removeConnector}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{removeConnector}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::removeConnector (string {\em connectorId})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a5b6ddc8a6259b07eae8f2c2f03dcdfaa}
+
+
+Remove um conector da Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em connectorId}]Identificador do conector que será removido. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o conector for removido; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a415ff450552523a495db85c15004c6f9}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a9b25cb3580c52ddb8147ede64ec53077}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!removeDescriptor@{removeDescriptor}}
+\index{removeDescriptor@{removeDescriptor}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{removeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::removeDescriptor (string {\em descriptorId})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a9b25cb3580c52ddb8147ede64ec53077}
+
+
+Remove um descritor da Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptorId}]Identificador do descritor que será removido. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o descritor for removido; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_ad3ae20153844de461ded8a643443dc08}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a23d60db841bf10edd6266de52613b9b2}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!removeInterface@{removeInterface}}
+\index{removeInterface@{removeInterface}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{removeInterface}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::removeInterface (string {\em nodeId}, \/  string {\em interfaceId})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a23d60db841bf10edd6266de52613b9b2}
+
+
+Remove uma interface da Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nodeId}]Idenitificador do nó de onde esta interface será removida. \item[{\em descriptorId}]Identificador do descritor que será removido. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o descritor for removido; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_abe89650753eccb62bf1772cc0e87d6b7}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a11e5f1029545aa4c0435094cc59477cb}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!removeLink@{removeLink}}
+\index{removeLink@{removeLink}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{removeLink}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::removeLink (string {\em compositeId}, \/  string {\em linkId})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a11e5f1029545aa4c0435094cc59477cb}
+
+
+Remove um elo da Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nodeId}]Idenitificador do nó de onde este elo será removido. \item[{\em descriptorId}]Identificador do elo que será removido. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o elo for removido; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a99c3ab683d01ec8fecae2b01f7069bc4}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a5b363245776a5a71bd3c7628dcf91f7e}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!removeRule@{removeRule}}
+\index{removeRule@{removeRule}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{removeRule}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::removeRule (string {\em ruleId})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a5b363245776a5a71bd3c7628dcf91f7e}
+
+
+Remove uma regra da Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ruleId}]Identificador da Regra que será removida. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a regra for removida; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a1b9bb86e478437909dd6f5a77f2ff4b4}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a6aebcca439720cc2c9b69d6b7b5c45c7}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!removeTransition@{removeTransition}}
+\index{removeTransition@{removeTransition}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{removeTransition}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::removeTransition (string {\em transitionId})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a6aebcca439720cc2c9b69d6b7b5c45c7}
+
+
+Remove uma transição da Versão Cliente do Documento NCL em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transitionId}]Identificador da transição que será removida. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se a transição for removida; False caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a4f88db31bb7d754489e7cc965d9035c2}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a968a7252444aa05bb471f47e4c554d19}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!saveCurrentFile@{saveCurrentFile}}
+\index{saveCurrentFile@{saveCurrentFile}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{saveCurrentFile}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::saveCurrentFile (string {\em fileName})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a968a7252444aa05bb471f47e4c554d19}
+
+
+Salva o Versão Cliente do documento NCL atualmente em execução em um arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]Nome do arquivo que será gerado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se o arquivo foi criado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ae80834b5a0aa0ffdfb399a85f92b9bd5}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!setBroadcasterPrivateBaseId@{setBroadcasterPrivateBaseId}}
+\index{setBroadcasterPrivateBaseId@{setBroadcasterPrivateBaseId}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{setBroadcasterPrivateBaseId}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::editing::ClientEditingManager::setBroadcasterPrivateBaseId (string {\em id})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ae80834b5a0aa0ffdfb399a85f92b9bd5}
+
+
+Seta o nome da base privada da emissora. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]Nome da base privada da emissora. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a6a57699073fe086e75d16ffd96a5bfc3}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!setClientPrivateBaseId@{setClientPrivateBaseId}}
+\index{setClientPrivateBaseId@{setClientPrivateBaseId}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{setClientPrivateBaseId}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::editing::ClientEditingManager::setClientPrivateBaseId (string {\em id})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a6a57699073fe086e75d16ffd96a5bfc3}
+
+
+Seta o nome da base privada do cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]Nome da base privada do cliente. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_af64ee7af65344bf8c0eba75c33a9e29c}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!setCurrentDocument@{setCurrentDocument}}
+\index{setCurrentDocument@{setCurrentDocument}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{setCurrentDocument}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::editing::ClientEditingManager::setCurrentDocument (NclDocument $\ast$ {\em nclDocument})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_af64ee7af65344bf8c0eba75c33a9e29c}
+
+
+Método utilizado para setar o documento ncl atualmente em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nclDocument}]O documento NCL atualmente em execução. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a07b41ca3cb59e493972d73c8f8e724b8}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!setIFormatterAdpater@{setIFormatterAdpater}}
+\index{setIFormatterAdpater@{setIFormatterAdpater}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{setIFormatterAdpater}]{\setlength{\rightskip}{0pt plus 5cm}void br::ufscar::lince::ginga::wac::editing::ClientEditingManager::setIFormatterAdpater ({\bf IFormatterAdapter} $\ast$ {\em formatter})}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a07b41ca3cb59e493972d73c8f8e724b8}
+
+
+Seta a instância do formatter que irá receber os comandos de edição ao vivo. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em formatter}]Instância de Formatter que receberá os comandos de edição ao vivo. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7094577521bafedebcd7edafe753774f}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!undoLastEditing@{undoLastEditing}}
+\index{undoLastEditing@{undoLastEditing}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{undoLastEditing}]{\setlength{\rightskip}{0pt plus 5cm}bool br::ufscar::lince::ginga::wac::editing::ClientEditingManager::undoLastEditing (int {\em n} = {\ttfamily 1})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7094577521bafedebcd7edafe753774f}
+
+
+Permite desfazer as ultimas edições realizadas por aplicações do cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n}]Número de edições que serão desfeitas. Se omitido será desfeita uma edição. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se as alterações foram desfeitas com sucesso; False Caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IClientEditing_a8b8cd2e9f79545630e04334d6366e28e}{br::ufscar::lince::ginga::wac::editing::IClientEditing}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a127cda95b090ee9d020494d2c958be62}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!\_\-instance@{\_\-instance}}
+\index{\_\-instance@{\_\-instance}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{\_\-instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ClientEditingManager}$\ast$ {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::\_\-instance}\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a127cda95b090ee9d020494d2c958be62}
+
+
+Instância única de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager}{ClientEditingManager}. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ae6f42fa31a4a78d07977ee83561ed60d}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!broadcasterPrivateBaseId@{broadcasterPrivateBaseId}}
+\index{broadcasterPrivateBaseId@{broadcasterPrivateBaseId}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{broadcasterPrivateBaseId}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::broadcasterPrivateBaseId}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ae6f42fa31a4a78d07977ee83561ed60d}
+
+
+Nome da Base Privada dos documentos da emissora. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad67459adf66064e713ba4fbf1870ce26}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!CLIENT\_\-LINK\_\-PREFIX@{CLIENT\_\-LINK\_\-PREFIX}}
+\index{CLIENT\_\-LINK\_\-PREFIX@{CLIENT\_\-LINK\_\-PREFIX}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{CLIENT\_\-LINK\_\-PREFIX}]{\setlength{\rightskip}{0pt plus 5cm}const string {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::CLIENT\_\-LINK\_\-PREFIX}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_ad67459adf66064e713ba4fbf1870ce26}
+
+
+Prefixo anexado aos identificadores das entidades NCL adicionadas pelo cliente. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7610c9f79a41fb3cd819cffdd8c3d576}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!clientPrivateBaseId@{clientPrivateBaseId}}
+\index{clientPrivateBaseId@{clientPrivateBaseId}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{clientPrivateBaseId}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::clientPrivateBaseId}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a7610c9f79a41fb3cd819cffdd8c3d576}
+
+
+Nome da Base Privada dos documentos do Cliente. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a9a5b80d7a04837b9796f3ef87972d99a}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!currentDocument@{currentDocument}}
+\index{currentDocument@{currentDocument}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{currentDocument}]{\setlength{\rightskip}{0pt plus 5cm}NclDocument$\ast$ {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::currentDocument}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a9a5b80d7a04837b9796f3ef87972d99a}
+
+
+Instância do documento NCL atualmente em execução. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a259109a4e6e19ad1cc8b193f99140c7d}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!documentPath@{documentPath}}
+\index{documentPath@{documentPath}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{documentPath}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::documentPath}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a259109a4e6e19ad1cc8b193f99140c7d}
+
+
+Caminho onde esta gravado o documento NCL atualmente em execução. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa89f63aad52acdd1fc2502ebe6193be8}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!editingCommands@{editingCommands}}
+\index{editingCommands@{editingCommands}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{editingCommands}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf EditingCommand}$\ast$$>$$\ast$ {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::editingCommands}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_aa89f63aad52acdd1fc2502ebe6193be8}
+
+
+Lista que contém todas os comandos de edição enviados por aplicações cliente. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a49d8d70cee155e1d15c5da2cbb107777}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!formatter@{formatter}}
+\index{formatter@{formatter}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{formatter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf IFormatterAdapter}$\ast$ {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::formatter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a49d8d70cee155e1d15c5da2cbb107777}
+
+
+Interface utilizada para comunicação com o Formatter do módulo Formatter. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a01857fae3b654789d6a6eb665bf9e058}{
+\index{br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}!mapCommands@{mapCommands}}
+\index{mapCommands@{mapCommands}!br::ufscar::lince::ginga::wac::editing::ClientEditingManager@{br::ufscar::lince::ginga::wac::editing::ClientEditingManager}}
+\subsubsection[{mapCommands}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, {\bf EditingCommand}$\ast$$>$$\ast$ {\bf br::ufscar::lince::ginga::wac::editing::ClientEditingManager::mapCommands}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ClientEditingManager_a01857fae3b654789d6a6eb665bf9e058}
+
+
+Mapa que relaciona os comandos de edições com as Ids das entidades NCL adicionadas ou removidas. 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ClientEditingManager_8h}{ClientEditingManager.h}\end{DoxyCompactItemize}

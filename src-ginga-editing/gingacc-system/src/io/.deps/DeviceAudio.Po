@@ -1,0 +1,7 @@
+DeviceAudio.o: interface/device/DeviceAudio.cpp \
+  interface/device/../../../../include/io/interface/device/DeviceAudio.h \
+  interface/device/../../../../include/io/interface/device/IDeviceAudio.h
+
+interface/device/../../../../include/io/interface/device/DeviceAudio.h:
+
+interface/device/../../../../include/io/interface/device/IDeviceAudio.h:

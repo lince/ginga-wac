@@ -1,0 +1,9 @@
+all: test
+
+test: main.cpp
+	g++ main.cpp -o teste -lffmpegginga -lpthread -D_REENTRANT -g
+	#g++ main.cpp -o teste -I.. -L/home/lince/Desktop/CUR/FFMpeg/ginga_ffmpeg -Wl,-rpath,/home/lince/Desktop/CUR/FFMpeg/ginga_ffmpeg/ -lffmpegginga -lpthread -D_REENTRANT -g
+
+clean::
+	rm -f teste *.o
+

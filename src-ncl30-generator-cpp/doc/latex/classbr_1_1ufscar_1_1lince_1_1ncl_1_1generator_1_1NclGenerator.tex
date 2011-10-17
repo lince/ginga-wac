@@ -1,0 +1,286 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator}{
+\section{br::ufscar::lince::ncl::generator::NclGenerator Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator}\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+}
+
+
+Classe que serve como fachada para todos os serviços do Componente \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator}{NclGenerator}.  
+
+
+
+
+{\ttfamily \#include $<$NclGenerator.h$>$}
+
+Inheritance diagram for br::ufscar::lince::ncl::generator::NclGenerator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a364caf2d15d48ca7f2d903a514134542}{NclGenerator} ()
+\begin{DoxyCompactList}\small\item\em Construtor da Classe. \item\end{DoxyCompactList}\item 
+\hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a95e37288a7d455edd79d9eb95bb3e733}{$\sim$NclGenerator} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da Classe. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_aad4936354267258229fb526a070e5482}{setReferNclDocument} (NclDocument $\ast$referDocument)
+\begin{DoxyCompactList}\small\item\em Seta o NclDocument que servirá de referência para a geração de código. \item\end{DoxyCompactList}\item 
+virtual NclDocument $\ast$ \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_ab8447127e8b36e07f83995e4a0867596}{getReferNclDocument} ()
+\begin{DoxyCompactList}\small\item\em Obtém o NclDocument que está sendo usado como refência para a geração de código. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a59b182d92c713dce65071b9a9c391c5f}{generateXmlCode} (Entity $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Gerá o código Xml equivalente a uma entidade Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a1c0a01534324eb9c5614b72391844cd5}{generateXmlCode} (ConditionExpression $\ast$conditionExpression)
+\begin{DoxyCompactList}\small\item\em Gerá o código Xml equivalente a uma conditionExpression Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_abd146c724f44d5750a92979d8fe53b34}{generateXmlCode} (Bind $\ast$bind)
+\begin{DoxyCompactList}\small\item\em Gerá o código Xml equivalente a uma bind Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_abc3c9219312ca8082cce41d6e1b5fc23}{generateXmlCode} (Action $\ast$action)
+\begin{DoxyCompactList}\small\item\em Gerá o código Xml equivalente a um Action Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_aae7b4842e72b88deb5c5a303a77c7cab}{generateXmlCode} (Base $\ast$base)
+\begin{DoxyCompactList}\small\item\em Gerá o código Xml equivalente a uma base Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a1d6d619cdde5a146572c0f4a6beeae54}{generateXmlCode} (NclDocument $\ast$nclDocument=NULL)
+\begin{DoxyCompactList}\small\item\em Gerá o código Xml equivalente a um Documento Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a2306a011f81b11d0353644bf6bdf3e2b}{generateXmlCode} (Parameter $\ast$parameter, string paramType)
+\begin{DoxyCompactList}\small\item\em Gerá o código Xml equivalente a um parametro Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a2817848f6498deda5d5e22cf784907a0}{generateNclFile} (string fileName, NclDocument $\ast$nclDoc=NULL)
+\begin{DoxyCompactList}\small\item\em Gerá um arquivo xml contendo o código equivalente a um entidade Ncl representado por uma instância do componente ncl30. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que serve como fachada para todos os serviços do Componente \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator}{NclGenerator}. Através dos métodos desta classe é póssivel se gerar código XML para a maioria das entidades NCL representadas pelo componente ncl30. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a364caf2d15d48ca7f2d903a514134542}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!NclGenerator@{NclGenerator}}
+\index{NclGenerator@{NclGenerator}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{NclGenerator}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ncl::generator::NclGenerator::NclGenerator ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a364caf2d15d48ca7f2d903a514134542}
+
+
+Construtor da Classe. 
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a95e37288a7d455edd79d9eb95bb3e733}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!$\sim$NclGenerator@{$\sim$NclGenerator}}
+\index{$\sim$NclGenerator@{$\sim$NclGenerator}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{$\sim$NclGenerator}]{\setlength{\rightskip}{0pt plus 5cm}br::ufscar::lince::ncl::generator::NclGenerator::$\sim$NclGenerator ()}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a95e37288a7d455edd79d9eb95bb3e733}
+
+
+Destrutor da Classe. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a2817848f6498deda5d5e22cf784907a0}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateNclFile@{generateNclFile}}
+\index{generateNclFile@{generateNclFile}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateNclFile}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool br::ufscar::lince::ncl::generator::NclGenerator::generateNclFile (string {\em fileName}, \/  NclDocument $\ast$ {\em nclDoc} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a2817848f6498deda5d5e22cf784907a0}
+
+
+Gerá um arquivo xml contendo o código equivalente a um entidade Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]Nome do arquivo que será gerado. \item[{\em nclDoc}]Documento NCL que terá seu código salvo em um arquivo. Se omitido, será utilizado o documento de referência. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se arquivo foi gerado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em InitializationException}]Se Documento de referência não estiver setado e nclDoc == NULL. \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_a9d4259cf5746aec2541681148937057b}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a2306a011f81b11d0353644bf6bdf3e2b}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateXmlCode@{generateXmlCode}}
+\index{generateXmlCode@{generateXmlCode}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateXmlCode}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ncl::generator::NclGenerator::generateXmlCode (Parameter $\ast$ {\em parameter}, \/  string {\em paramType})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a2306a011f81b11d0353644bf6bdf3e2b}
+
+
+Gerá o código Xml equivalente a um parametro Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em parameter}]O parametro Ncl cujo código Xml será gerado. \item[{\em paramType}]Tipo de parametro Ncl que será gerado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código Xml gerado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em BadArgumentException}]Se entity == NULL. \item[{\em InitializationException}]Se Documento de referência não estiver setado. \item[{\em \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1UnsupportedNclEntityException}{UnsupportedNclEntityException}}]se o paramType não for suportada componente Ncl30Generator. \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_aa3110ec3a080b9d990c7b02dae573a85}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a1d6d619cdde5a146572c0f4a6beeae54}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateXmlCode@{generateXmlCode}}
+\index{generateXmlCode@{generateXmlCode}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateXmlCode}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ncl::generator::NclGenerator::generateXmlCode (NclDocument $\ast$ {\em nclDocument} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a1d6d619cdde5a146572c0f4a6beeae54}
+
+
+Gerá o código Xml equivalente a um Documento Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nclDocument}]O document Ncl cujo código Xml será gerado. Se omitido, será gerado o documento de referrencia. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código Xml gerado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em InitializationException}]Se Documento de referência não estiver setado e nclDocument == NULL; \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_a396181e0d4b4d7e53addd5a25ffa839b}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_aae7b4842e72b88deb5c5a303a77c7cab}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateXmlCode@{generateXmlCode}}
+\index{generateXmlCode@{generateXmlCode}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateXmlCode}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ncl::generator::NclGenerator::generateXmlCode (Base $\ast$ {\em base})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_aae7b4842e72b88deb5c5a303a77c7cab}
+
+
+Gerá o código Xml equivalente a uma base Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em base}]A base Ncl cujo código Xml será gerado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código Xml gerado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em BadArgumentException}]Se base == NULL. \item[{\em InitializationException}]Se Documento de referência não estiver setado. \item[{\em \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1UnsupportedNclEntityException}{UnsupportedNclEntityException}}]se a base não for suportada componente Ncl30Generator. \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_a185d2e61f3100bcb6168c229c640e5fc}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_abc3c9219312ca8082cce41d6e1b5fc23}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateXmlCode@{generateXmlCode}}
+\index{generateXmlCode@{generateXmlCode}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateXmlCode}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ncl::generator::NclGenerator::generateXmlCode (Action $\ast$ {\em action})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_abc3c9219312ca8082cce41d6e1b5fc23}
+
+
+Gerá o código Xml equivalente a um Action Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em action}]A Action Ncl cujo código Xml será gerado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código Xml gerado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em BadArgumentException}]Se action == NULL. \item[{\em InitializationException}]Se Documento de referência não estiver setado. \item[{\em \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1UnsupportedNclEntityException}{UnsupportedNclEntityException}}]se a action não for suportada componente Ncl30Generator. \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_a6a5fcbb5969d970eef4e5ea8826c84c6}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_abd146c724f44d5750a92979d8fe53b34}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateXmlCode@{generateXmlCode}}
+\index{generateXmlCode@{generateXmlCode}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateXmlCode}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ncl::generator::NclGenerator::generateXmlCode (Bind $\ast$ {\em bind})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_abd146c724f44d5750a92979d8fe53b34}
+
+
+Gerá o código Xml equivalente a uma bind Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bind}]A bind Ncl cujo código Xml será gerado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código Xml gerado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em BadArgumentException}]Se bind == NULL. \item[{\em InitializationException}]Se Documento de referência não estiver setado. \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_ab868d963b3ca0de3cfc108939731475f}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a1c0a01534324eb9c5614b72391844cd5}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateXmlCode@{generateXmlCode}}
+\index{generateXmlCode@{generateXmlCode}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateXmlCode}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ncl::generator::NclGenerator::generateXmlCode (ConditionExpression $\ast$ {\em conditionExpression})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a1c0a01534324eb9c5614b72391844cd5}
+
+
+Gerá o código Xml equivalente a uma conditionExpression Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em conditionExpression}]A conditionExpression Ncl cujo código Xml será gerado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código Xml gerado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em BadArgumentException}]Se conditionExpression == NULL. \item[{\em InitializationException}]Se Documento de referência não estiver setado. \item[{\em \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1UnsupportedNclEntityException}{UnsupportedNclEntityException}}]se a conditionExpression não for suportada componente Ncl30Generator. \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_aa03215531edbb0cc50097b2f6de3eda9}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a59b182d92c713dce65071b9a9c391c5f}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!generateXmlCode@{generateXmlCode}}
+\index{generateXmlCode@{generateXmlCode}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{generateXmlCode}]{\setlength{\rightskip}{0pt plus 5cm}virtual string br::ufscar::lince::ncl::generator::NclGenerator::generateXmlCode (Entity $\ast$ {\em entity})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_a59b182d92c713dce65071b9a9c391c5f}
+
+
+Gerá o código Xml equivalente a uma entidade Ncl representado por uma instância do componente ncl30. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em entity}]Entidade Ncl cujo código Xml será gerado. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código Xml gerado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em BadArgumentException}]Se entity == NULL. \item[{\em InitializationException}]Se Documento de referência não estiver setado. \item[{\em \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1UnsupportedNclEntityException}{UnsupportedNclEntityException}}]se a entidade não for suportada componente Ncl30Generator. \end{DoxyExceptions}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_ab15f1ff3a96439e2a33427c7df5d9988}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_ab8447127e8b36e07f83995e4a0867596}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!getReferNclDocument@{getReferNclDocument}}
+\index{getReferNclDocument@{getReferNclDocument}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{getReferNclDocument}]{\setlength{\rightskip}{0pt plus 5cm}virtual NclDocument$\ast$ br::ufscar::lince::ncl::generator::NclGenerator::getReferNclDocument ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_ab8447127e8b36e07f83995e4a0867596}
+
+
+Obtém o NclDocument que está sendo usado como refência para a geração de código. 
+
+\begin{DoxyReturn}{Returns}
+NclDocument que esta sendo usado como refẽncia. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_ae351bae817561b66e20e5442d49a17e0}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_aad4936354267258229fb526a070e5482}{
+\index{br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}!setReferNclDocument@{setReferNclDocument}}
+\index{setReferNclDocument@{setReferNclDocument}!br::ufscar::lince::ncl::generator::NclGenerator@{br::ufscar::lince::ncl::generator::NclGenerator}}
+\subsubsection[{setReferNclDocument}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ncl::generator::NclGenerator::setReferNclDocument (NclDocument $\ast$ {\em referDocument})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1NclGenerator_aad4936354267258229fb526a070e5482}
+
+
+Seta o NclDocument que servirá de referência para a geração de código. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em referDocument}]Instância de NclDocument que servirá como referência. \end{DoxyParams}
+
+
+Implements \hyperlink{classbr_1_1ufscar_1_1lince_1_1ncl_1_1generator_1_1INclGenerator_aa6efc869c5838051c86741ce73babe4e}{br::ufscar::lince::ncl::generator::INclGenerator}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{NclGenerator_8h}{NclGenerator.h}\end{DoxyCompactItemize}

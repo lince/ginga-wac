@@ -1,0 +1,300 @@
+AC_INIT(configure.in)
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(gingancl, 0.10.1)
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX([g++])
+AM_PROG_LIBTOOL
+
+CXXFLAGS="-fPIC $CXXFLAGS"
+CFLAGS="-fPIC $CFLAGS"
+
+# Bring additional directories where things might be found into our
+# search path. I don't know why autoconf doesn't do this by default
+for spfx in /usr/lib/ /usr/local/lib/ /usr/local/lib/ginga/ /usr/local/lib/ginga/iocontents; do
+if test -d ${spfx}; then
+LDFLAGS="-L${spfx} $LDFLAGS"
+fi
+done
+
+for spfx in /usr/include/ /usr/local/include/ /usr/local/include/ginga/; do
+if test -d ${spfx}; then
+CPPFLAGS="-I${spfx} $CPPFLAGS"
+fi
+done
+
+###########
+# HEADERS #
+###########
+
+##################
+# TeleMidia Util #
+##################
+AC_CHECK_HEADER([util/functions.h], [], AC_MSG_ERROR([
+
+Couldn't find TeleMidia Util headers.
+Please install telemidia-util project.
+
+]))
+
+###########
+# NCL 3.0 #
+###########
+AC_CHECK_HEADER([ncl/Entity.h], [], AC_MSG_ERROR([
+
+Couldn't find NCL 3.0 headers.
+Please install ncl30 project.
+
+]))
+
+###########
+# NCL 3.0 #
+###########
+AC_CHECK_HEADER([wac/editing/ClientEditingManager.h], [], AC_MSG_ERROR([
+
+Couldn't find ClientEditingManager.
+Please install ClientEditingManager project.
+
+]))
+
+#######################
+# NCL 3.0 PrivateBase #
+#######################
+#TODO: resolve header dependencies
+#AC_CHECK_HEADER([ncl/privatebase/PrivateBaseManager.h], [], AC_MSG_ERROR([
+#
+#Couldn't find NCL 3.0 PrivateBase headers.
+#Please install ncl30/privateBase.
+#
+#]))
+
+#####################
+# NCL 3.0 Converter #
+#####################
+#TODO: resolve header dependencies
+#AC_CHECK_HEADER([], [], AC_MSG_ERROR([
+#
+#Couldn't find NCL 3.0 Converter headers.
+#Please install it.
+#
+#]))
+
+###############
+# Ginga CC CM #
+###############
+AC_CHECK_HEADER([cm/IComponentManager.h], [], AC_MSG_ERROR([
+
+Couldn't find Ginga Common Core Component Manager headers.
+Please install gingacc-cm project.
+
+]))
+
+############################
+# Ginga CC Context Manager #
+############################
+AC_CHECK_HEADER([contextmanager/IContextManager.h], [], AC_MSG_ERROR([
+
+Couldn't find Ginga CC Context Manager headers.
+Please install gingacc-contextmanager project.
+
+]))
+
+##########################
+# Ginga CC System Thread #
+##########################
+AC_CHECK_HEADER([system/thread/Thread.h], [], AC_MSG_ERROR([
+
+Couldn't find Ginga CC System Thread headers.
+Please install gingacc-system project.
+
+]))
+
+######################
+# Ginga CC System IO #
+######################
+AC_CHECK_HEADER([system/io/interface/output/IWindow.h], [], AC_MSG_ERROR([
+
+Couldn't find Ginga CC System IO headers.
+Please install gingacc-system project.
+
+]))
+
+###########################################
+# Ginga Common Core Interactivity Channel #
+###########################################
+AC_CHECK_HEADER([ic/IInteractiveChannelListener.h], [], AC_MSG_ERROR([
+
+Couldn't find Ginga Common Core Interactivity Channel headers.
+Please install gingacc-ic project.
+
+]))
+
+############################
+# Ginga Common Core Player #
+############################
+AC_CHECK_HEADER([player/IPlayerListener.h], [], AC_MSG_ERROR([
+
+Couldn't find Ginga Common Core Player headers.
+Please install gingacc-player project.
+
+]))
+
+
+########
+# LIBS #
+########
+
+##################
+# TeleMidia Util #
+##################
+AC_HAVE_LIBRARY(telemidiautil, , AC_ERROR([
+
+Couldn't find TeleMidia Util library.
+Please install TeleMidia Util Library.
+
+]))
+
+###########
+# NCL 3.0 #
+###########
+AC_HAVE_LIBRARY(ncl30, , AC_ERROR([
+
+Couldn't find ncl30 library.
+Please install NCL 3.0.
+
+]))
+
+#############
+# GINGA WAC #
+#############
+#AC_HAVE_LIBRARY(gingawacediting, , AC_ERROR([
+#
+#Couldn't find gingawac library.
+#Please install Ginga Wac.
+#
+#]))
+
+#####################
+# NCL 3.0 Converter #
+#####################
+AC_HAVE_LIBRARY(ncl30converter, , AC_ERROR([
+
+Couldn't find ncl30converter library.
+Please install NCL 3.0 Converter.
+
+]))
+
+
+#######################
+# NCL 3.0 PrivateBase #
+#######################
+AC_HAVE_LIBRARY(ncl30privatebase, , AC_ERROR([
+
+Couldn't find ncl30privatebase library.
+Please install NCL 3.0 PrivateBase.
+
+]))
+
+##########################
+# Ginga CC System Thread #
+##########################
+AC_HAVE_LIBRARY(gingaccsystemthread, , AC_ERROR([
+
+Couldn't find Ginga CC System Thread library.
+Please install Ginga CC System Thread Library.
+
+]))
+
+########################
+# Ginga CC System I/O #
+#######################
+AC_HAVE_LIBRARY(gingaccsystemio, , AC_ERROR([
+
+Couldn't find gingaccsystemio library.
+Please install Ginga Common Core System I/O.
+
+]))
+
+############################
+# Ginga Common Core Player #
+############################
+AC_HAVE_LIBRARY(gingaccplayer, , AC_ERROR([
+
+Couldn't find gingaccplayer library.
+Please install Ginga Common Core Player.
+
+]))
+
+###############
+#  WAC CHECK  #
+###############
+wac=yes
+AC_DEFINE(HAVE_WAC, 1, [Define to 1 if you have Wac support.])
+#AC_ARG_ENABLE(wac,
+#  [  --enable-wac build wac [[default=no]]],
+#  enable_wac="$enableval", enable_wac=no)
+#
+#if test x$enable_wac = xyes; then
+#  wac=yes
+#  WAC_LIBS = '-lgingawaceditng'
+#  AC_DEFINE(HAVE_WAC, 1, [Define to 1 if you have Wac support.]),
+#fi
+#
+#AM_CONDITIONAL(WAC, test x$wac = xyes)
+#AC_SUBST(WAC_LIBS)
+
+
+##############
+# JAVA check #
+##############
+ncletplayer=no
+AC_ARG_ENABLE(ncletplayer,
+  [  --enable-ncletplayer    build nclet support [[default=no]]],
+  enable_ncletplayer="$enableval", enable_ncletplayer=no)
+
+if test x$enable_ncletplayer = xyes; then
+      AC_CHECK_HEADER(player/NCLetPlayer.h,
+        ncletplayer=yes
+        NCLET_LIBS='-lgingaccplayer'
+        AC_DEFINE(HAVE_NCLET, 1, [Def to 1 if you have nclet support.]),
+        AC_MSG_WARN([
+*** Header not found -- nclet support will not be built.]))
+fi
+
+AM_CONDITIONAL(NCLET, test x$ncletplayer = xyes)
+AC_SUBST(NCLET_LIBS)
+
+
+#AC_OUTPUT(Makefile files/Makefile include/model/Makefile
+#    include/adaptation/Makefile include/emconverter/Makefile
+#    include/adapters/Makefile include/adapters/av/Makefile
+#    include/adapters/av/tv/Makefile include/adapters/image/Makefile
+#    include/adapters/procedural/Makefile
+#    include/adapters/procedural/lua/Makefile include/adapters/text/Makefile
+#    include/focus/Makefile include/prefetch/Makefile include/Makefile
+#    src/model/Makefile src/adaptation/Makefile
+#    src/emconverter/Makefile src/adapters/Makefile
+#    src/adapters/av/Makefile src/adapters/image/Makefile
+#    src/adapters/text/Makefile
+#    src/adapters/procedural/lua/Makefile
+#    src/focus/Makefile src/prefetch/Makefile src/Makefile test/Makefile)
+
+AC_OUTPUT(Makefile files/Makefile include/model/Makefile
+    include/prefetch/Makefile include/adapters/Makefile include/Makefile
+    src/model/Makefile src/adaptation/Makefile
+    src/emconverter/Makefile src/adapters/Makefile
+    src/adapters/av/Makefile src/adapters/image/Makefile
+    src/adapters/text/Makefile
+    src/adapters/procedural/lua/Makefile
+    src/focus/Makefile src/gfx/Makefile src/prefetch/Makefile
+    src/Makefile)
+
+#test/Makefile)
+
+AC_MSG_RESULT([
+Build options: 
+  Module directory                    $MODULEDIR
+  Ginga CC Player With NCLET Support  $ncletplayer
+  Ginga WAC  			      $wac
+])

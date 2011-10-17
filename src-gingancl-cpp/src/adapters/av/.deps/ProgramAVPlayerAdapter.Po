@@ -1,0 +1,1056 @@
+ProgramAVPlayerAdapter.o ProgramAVPlayerAdapter.o:  \
+ tv/ProgramAVPlayerAdapter.cpp \
+  tv/../../../../include/adapters/av/tv/ProgramAVPlayerAdapter.h \
+  tv/../../../../include/adapters/av/tv/../../../model/ExecutionObject.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++config.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-32.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h /usr/include/libio.h \
+  /usr/include/_G_config.h /usr/include/wchar.h /usr/include/bits/wchar.h \
+  /usr/include/gconv.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+  /usr/include/bits/stdio.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+  /usr/include/bits/sched.h /usr/include/bits/time.h \
+  /usr/include/signal.h /usr/include/bits/sigset.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+  /usr/include/bits/environments.h /usr/include/bits/confname.h \
+  /usr/include/getopt.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h /usr/include/endian.h /usr/include/bits/endian.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+  /usr/include/sys/select.h /usr/include/bits/select.h \
+  /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/include/sys/timeb.h /usr/include/sys/time.h /usr/include/math.h \
+  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+  /usr/include/sys/resource.h /usr/include/bits/resource.h \
+  /usr/local/include/ginga/system/io/interface/input/CodeMap.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/map \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tree.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_map.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multimap.h \
+  /usr/local/include/ginga/player/IPlayer.h \
+  /usr/local/include/ginga/system/io/interface/output/IWindow.h \
+  /usr/local/include/ginga/util/IColor.h \
+  /usr/local/include/ginga/system/io/interface/output/ISurface.h \
+  /usr/local/include/ginga/system/io/interface/output/../IIOContainer.h \
+  /usr/local/include/ginga/system/io/interface/output/ISurface.h \
+  /usr/local/include/ginga/system/io/interface/content/image/IImageProvider.h \
+  /usr/local/include/ginga/system/io/interface/content/image/../../output/ISurface.h \
+  /usr/local/include/ginga/system/io/interface/content/image/../../IIOContainer.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/set \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_set.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multiset.h \
+  /usr/local/include/ginga/player/IPlayerListener.h \
+  /usr/local/include/ginga/player/PlayerState.h \
+  /usr/local/include/ginga/ncl/animation/Animation.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/descriptor/../Entity.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/components/ReferenceContent.h \
+  /usr/local/include/ginga/ncl/components/Content.h \
+  /usr/local/include/ginga/ncl/components/ContentTypeManager.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/interfaces/LabeledAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/../Entity.h \
+  /usr/local/include/ginga/ncl/interfaces/Anchor.h \
+  /usr/local/include/ginga/ncl/interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/interfaces/LambdaAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/ContentAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/RelativeTimeIntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/PropertyAnchor.h \
+  /usr/local/include/ginga/ncl/layout/LayoutRegion.h \
+  /usr/local/include/ginga/ncl/layout/../Entity.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/util/IColor.h \
+  /usr/local/include/ginga/ncl/connectors/EventUtil.h \
+  /usr/local/include/ginga/util/functions.h \
+  tv/../../../../include/adapters/av/tv/../../../model/CascadingDescriptor.h \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/local/include/ginga/ncl/Parameter.h \
+  /usr/local/include/ginga/ncl/descriptor/Descriptor.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/descriptor/../Parameter.h \
+  /usr/local/include/ginga/ncl/descriptor/../layout/LayoutRegion.h \
+  /usr/local/include/ginga/ncl/descriptor/../navigation/FocusDecoration.h \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/descriptor/../navigation/KeyNavigation.h \
+  /usr/local/include/ginga/ncl/descriptor/../transition/Transition.h \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/local/include/ginga/ncl/descriptor/../transition/../Entity.h \
+  /usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/switches/DescriptorSwitch.h \
+  /usr/local/include/ginga/ncl/switches/../Entity.h \
+  /usr/local/include/ginga/ncl/switches/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/switches/Rule.h \
+  /usr/local/include/ginga/ncl/navigation/FocusDecoration.h \
+  /usr/local/include/ginga/ncl/navigation/KeyNavigation.h \
+  /usr/local/include/ginga/ncl/transition/Transition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/FormatterRegion.h \
+  /usr/local/include/ginga/ncl/descriptor/DescriptorUtil.h \
+  /usr/local/include/ginga/ncl/descriptor/Descriptor.h \
+  /usr/local/include/ginga/ncl/transition/TransitionUtil.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/transition/Transition.h \
+  /usr/local/include/ginga/system/io/IInputManager.h \
+  /usr/local/include/ginga/system/io/interface/input/IEventBuffer.h \
+  /usr/local/include/ginga/system/io/interface/input/IInputEvent.h \
+  /usr/local/include/ginga/system/io/interface/input/../IIOContainer.h \
+  /usr/local/include/ginga/system/io/interface/input/IInputEventListener.h \
+  /usr/local/include/ginga/system/io/interface/output/IWindow.h \
+  tv/../../../../include/adapters/av/tv/../../../model/FocusSourceManager.h \
+  /usr/local/include/ginga/system/io/interface/output/ISurface.h \
+  tv/../../../../include/adapters/av/tv/../../../model/FormatterEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/IFormatterEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/IEventListener.h \
+  tv/../../../../include/adapters/av/tv/../../../model/PresentationEvent.h \
+  /usr/local/include/ginga/ncl/interfaces/ContentAnchor.h \
+  tv/../../../../include/adapters/av/tv/../../../model/AnchorEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/SelectionEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/AttributionEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/IAttributeValueMaintainer.h \
+  tv/../../../../include/adapters/av/tv/../../../model/BeginEventTransition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/EndEventTransition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/EventTransition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/EventTransitionManager.h \
+  /usr/local/include/ginga/ncl/interfaces/RelativeTimeIntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/SampleIntervalAnchor.h \
+  tv/../../../../include/adapters/av/tv/../../../model/TransitionDispatcher.h \
+  /usr/local/include/ginga/system/thread/Thread.h /usr/include/errno.h \
+  /usr/include/bits/errno.h /usr/include/linux/errno.h \
+  /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  tv/../../../../include/adapters/av/tv/../../../model/NodeNesting.h \
+  /usr/local/include/ginga/ncl/components/Node.h \
+  /usr/local/include/ginga/ncl/components/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../interfaces/Anchor.h \
+  tv/../../../../include/adapters/av/tv/../../../model/AttributionEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/FormatterEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/PresentationEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/SelectionEvent.h \
+  /usr/local/include/ginga/ncl/components/Content.h \
+  /usr/local/include/ginga/ncl/components/ReferenceContent.h \
+  /usr/local/include/ginga/player/IProgramAV.h \
+  /usr/local/include/ginga/player/IPlayer.h \
+  tv/../../../../include/adapters/av/tv/../../FormatterPlayerAdapter.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/system/io/interface/input/IInputEventListener.h \
+  /usr/local/include/ginga/system/io/interface/output/ISurface.h \
+  /usr/local/include/ginga/player/IPlayer.h \
+  /usr/local/include/ginga/ncl/components/Content.h \
+  /usr/local/include/ginga/ncl/components/ContentNode.h \
+  /usr/local/include/ginga/ncl/components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/../interfaces/LambdaAnchor.h \
+  /usr/local/include/ginga/ncl/components/../reuse/ReferNode.h \
+  /usr/local/include/ginga/ncl/components/../reuse/../components/Node.h \
+  /usr/local/include/ginga/ncl/components/../reuse/../Entity.h \
+  /usr/local/include/ginga/ncl/components/Node.h \
+  /usr/local/include/ginga/ncl/components/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/ReferenceContent.h \
+  /usr/local/include/ginga/ncl/interfaces/LambdaAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h \
+  /usr/local/include/ginga/ncl/connectors/EventUtil.h \
+  tv/../../../../include/adapters/av/tv/../../../model/CompositeExecutionObject.h \
+  /usr/local/include/ginga/ncl/components/ContextNode.h \
+  /usr/local/include/ginga/ncl/components/../link/Link.h \
+  /usr/local/include/ginga/ncl/components/../link/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../link/../Parameter.h \
+  /usr/local/include/ginga/ncl/components/../link/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/Connector.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/../Parameter.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/Role.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/Role.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/SwitchPort.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/../components/Node.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/../components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/../link/Bind.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/CompositeNode.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Port.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Anchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/Node.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h \
+  /usr/local/include/ginga/ncl/components/../link/LinkComposition.h \
+  /usr/local/include/ginga/ncl/components/../link/Link.h \
+  /usr/local/include/ginga/ncl/components/IllegalNodeTypeException.h \
+  /usr/local/include/ginga/ncl/components/CompositeNode.h \
+  /usr/local/include/ginga/ncl/link/Link.h \
+  /usr/local/include/ginga/ncl/link/LinkComposition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/FormatterCausalLink.h \
+  tv/../../../../include/adapters/av/tv/../../../model/LinkAction.h \
+  tv/../../../../include/adapters/av/tv/../../../model/LinkActionProgressionListener.h \
+  tv/../../../../include/adapters/av/tv/../../../model/LinkTriggerCondition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/LinkTriggerListener.h \
+  tv/../../../../include/adapters/av/tv/../../../model/LinkCondition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/FormatterLink.h \
+  tv/../../../../include/adapters/av/tv/../../../model/LinkListener.h \
+  tv/../../../../include/adapters/av/tv/../../../model/ExecutionObject.h \
+  tv/../../../../include/adapters/av/tv/../../../model/ExecutionObject.h \
+  tv/../../../../include/adapters/av/tv/../../../model/AttributionEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/FormatterEvent.h \
+  tv/../../../../include/adapters/av/tv/../../../model/PresentationEvent.h \
+  tv/../../../../include/adapters/av/tv/../../IPlayerAdapterManager.h \
+  /usr/local/include/ginga/system/io/interface/content/ITimeBaseProvider.h \
+  /usr/local/include/ginga/system/io/interface/content/ITimeBaseListener.h \
+  /usr/local/include/ginga/player/INCLPlayer.h \
+  /usr/local/include/ginga/system/io/interface/content/ITimeBaseProvider.h \
+  tv/../../../../include/adapters/av/tv/../../IPlayerAdapter.h \
+  /usr/local/include/ginga/ncl/animation/Animation.h \
+  /usr/local/include/ginga/wac/state/IStateProvider.h \
+  /usr/local/include/ginga/player/PlayerState.h \
+  tv/../../../../include/adapters/av/tv/../../INclEditListener.h \
+  /usr/local/include/ginga/player/IApplicationPlayer.h \
+  tv/../../../../include/adapters/av/tv/../../NominalEventMonitor.h \
+  /usr/local/include/ginga/system/thread/Thread.h \
+  /usr/local/include/ginga/system/io/interface/content/ITimeBaseListener.h \
+  /usr/local/include/ginga/ncl/interfaces/ContentAnchor.h \
+  tv/../../../../include/adapters/av/tv/../../../model/EventTransition.h \
+  tv/../../../../include/adapters/av/tv/../../../model/TransitionDispatcher.h \
+  tv/../../../../include/adapters/AdaptersComponentSupport.h \
+  tv/../../../../include/adapters/../../config.h \
+  /usr/local/include/ginga/cm/IComponentManager.h \
+  /usr/local/include/ginga/cm/component/IComponent.h /usr/include/dlfcn.h \
+  /usr/include/bits/dlfcn.h
+
+tv/../../../../include/adapters/av/tv/ProgramAVPlayerAdapter.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/ExecutionObject.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++config.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/cpu_defines.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++locale.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/gconv.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/langinfo.h:
+
+/usr/include/nl_types.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libintl.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++io.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime:
+
+/usr/include/stdint.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/limits.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/atomic_word.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++allocator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_base.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_inline.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/time_members.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/messages_members.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/basic_file.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc:
+
+/usr/include/sys/timeb.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/bits/resource.h:
+
+/usr/local/include/ginga/system/io/interface/input/CodeMap.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/map:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tree.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_map.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multimap.h:
+
+/usr/local/include/ginga/player/IPlayer.h:
+
+/usr/local/include/ginga/system/io/interface/output/IWindow.h:
+
+/usr/local/include/ginga/util/IColor.h:
+
+/usr/local/include/ginga/system/io/interface/output/ISurface.h:
+
+/usr/local/include/ginga/system/io/interface/output/../IIOContainer.h:
+
+/usr/local/include/ginga/system/io/interface/output/ISurface.h:
+
+/usr/local/include/ginga/system/io/interface/content/image/IImageProvider.h:
+
+/usr/local/include/ginga/system/io/interface/content/image/../../output/ISurface.h:
+
+/usr/local/include/ginga/system/io/interface/content/image/../../IIOContainer.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/set:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_set.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multiset.h:
+
+/usr/local/include/ginga/player/IPlayerListener.h:
+
+/usr/local/include/ginga/player/PlayerState.h:
+
+/usr/local/include/ginga/ncl/animation/Animation.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/descriptor/../Entity.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/components/ReferenceContent.h:
+
+/usr/local/include/ginga/ncl/components/Content.h:
+
+/usr/local/include/ginga/ncl/components/ContentTypeManager.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/interfaces/LabeledAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/../Entity.h:
+
+/usr/local/include/ginga/ncl/interfaces/Anchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/interfaces/LambdaAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/ContentAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/RelativeTimeIntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/PropertyAnchor.h:
+
+/usr/local/include/ginga/ncl/layout/LayoutRegion.h:
+
+/usr/local/include/ginga/ncl/layout/../Entity.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/util/IColor.h:
+
+/usr/local/include/ginga/ncl/connectors/EventUtil.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/CascadingDescriptor.h:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/local/include/ginga/ncl/Parameter.h:
+
+/usr/local/include/ginga/ncl/descriptor/Descriptor.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/descriptor/../Parameter.h:
+
+/usr/local/include/ginga/ncl/descriptor/../layout/LayoutRegion.h:
+
+/usr/local/include/ginga/ncl/descriptor/../navigation/FocusDecoration.h:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/descriptor/../navigation/KeyNavigation.h:
+
+/usr/local/include/ginga/ncl/descriptor/../transition/Transition.h:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/local/include/ginga/ncl/descriptor/../transition/../Entity.h:
+
+/usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/switches/DescriptorSwitch.h:
+
+/usr/local/include/ginga/ncl/switches/../Entity.h:
+
+/usr/local/include/ginga/ncl/switches/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/switches/Rule.h:
+
+/usr/local/include/ginga/ncl/navigation/FocusDecoration.h:
+
+/usr/local/include/ginga/ncl/navigation/KeyNavigation.h:
+
+/usr/local/include/ginga/ncl/transition/Transition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/FormatterRegion.h:
+
+/usr/local/include/ginga/ncl/descriptor/DescriptorUtil.h:
+
+/usr/local/include/ginga/ncl/descriptor/Descriptor.h:
+
+/usr/local/include/ginga/ncl/transition/TransitionUtil.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/transition/Transition.h:
+
+/usr/local/include/ginga/system/io/IInputManager.h:
+
+/usr/local/include/ginga/system/io/interface/input/IEventBuffer.h:
+
+/usr/local/include/ginga/system/io/interface/input/IInputEvent.h:
+
+/usr/local/include/ginga/system/io/interface/input/../IIOContainer.h:
+
+/usr/local/include/ginga/system/io/interface/input/IInputEventListener.h:
+
+/usr/local/include/ginga/system/io/interface/output/IWindow.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/FocusSourceManager.h:
+
+/usr/local/include/ginga/system/io/interface/output/ISurface.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/FormatterEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/IFormatterEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/IEventListener.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/PresentationEvent.h:
+
+/usr/local/include/ginga/ncl/interfaces/ContentAnchor.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/AnchorEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/SelectionEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/AttributionEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/IAttributeValueMaintainer.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/BeginEventTransition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/EndEventTransition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/EventTransition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/EventTransitionManager.h:
+
+/usr/local/include/ginga/ncl/interfaces/RelativeTimeIntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/SampleIntervalAnchor.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/TransitionDispatcher.h:
+
+/usr/local/include/ginga/system/thread/Thread.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/NodeNesting.h:
+
+/usr/local/include/ginga/ncl/components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../interfaces/Anchor.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/AttributionEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/FormatterEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/PresentationEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/SelectionEvent.h:
+
+/usr/local/include/ginga/ncl/components/Content.h:
+
+/usr/local/include/ginga/ncl/components/ReferenceContent.h:
+
+/usr/local/include/ginga/player/IProgramAV.h:
+
+/usr/local/include/ginga/player/IPlayer.h:
+
+tv/../../../../include/adapters/av/tv/../../FormatterPlayerAdapter.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/system/io/interface/input/IInputEventListener.h:
+
+/usr/local/include/ginga/system/io/interface/output/ISurface.h:
+
+/usr/local/include/ginga/player/IPlayer.h:
+
+/usr/local/include/ginga/ncl/components/Content.h:
+
+/usr/local/include/ginga/ncl/components/ContentNode.h:
+
+/usr/local/include/ginga/ncl/components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/../interfaces/LambdaAnchor.h:
+
+/usr/local/include/ginga/ncl/components/../reuse/ReferNode.h:
+
+/usr/local/include/ginga/ncl/components/../reuse/../components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../reuse/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/ReferenceContent.h:
+
+/usr/local/include/ginga/ncl/interfaces/LambdaAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/connectors/EventUtil.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/CompositeExecutionObject.h:
+
+/usr/local/include/ginga/ncl/components/ContextNode.h:
+
+/usr/local/include/ginga/ncl/components/../link/Link.h:
+
+/usr/local/include/ginga/ncl/components/../link/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../Parameter.h:
+
+/usr/local/include/ginga/ncl/components/../link/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/Connector.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/../Parameter.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/Role.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/Role.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/SwitchPort.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/../components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/../components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/../link/Bind.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/CompositeNode.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Anchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/components/../link/LinkComposition.h:
+
+/usr/local/include/ginga/ncl/components/../link/Link.h:
+
+/usr/local/include/ginga/ncl/components/IllegalNodeTypeException.h:
+
+/usr/local/include/ginga/ncl/components/CompositeNode.h:
+
+/usr/local/include/ginga/ncl/link/Link.h:
+
+/usr/local/include/ginga/ncl/link/LinkComposition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/FormatterCausalLink.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/LinkAction.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/LinkActionProgressionListener.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/LinkTriggerCondition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/LinkTriggerListener.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/LinkCondition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/FormatterLink.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/LinkListener.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/ExecutionObject.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/ExecutionObject.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/AttributionEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/FormatterEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/PresentationEvent.h:
+
+tv/../../../../include/adapters/av/tv/../../IPlayerAdapterManager.h:
+
+/usr/local/include/ginga/system/io/interface/content/ITimeBaseProvider.h:
+
+/usr/local/include/ginga/system/io/interface/content/ITimeBaseListener.h:
+
+/usr/local/include/ginga/player/INCLPlayer.h:
+
+/usr/local/include/ginga/system/io/interface/content/ITimeBaseProvider.h:
+
+tv/../../../../include/adapters/av/tv/../../IPlayerAdapter.h:
+
+/usr/local/include/ginga/ncl/animation/Animation.h:
+
+/usr/local/include/ginga/wac/state/IStateProvider.h:
+
+/usr/local/include/ginga/player/PlayerState.h:
+
+tv/../../../../include/adapters/av/tv/../../INclEditListener.h:
+
+/usr/local/include/ginga/player/IApplicationPlayer.h:
+
+tv/../../../../include/adapters/av/tv/../../NominalEventMonitor.h:
+
+/usr/local/include/ginga/system/thread/Thread.h:
+
+/usr/local/include/ginga/system/io/interface/content/ITimeBaseListener.h:
+
+/usr/local/include/ginga/ncl/interfaces/ContentAnchor.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/EventTransition.h:
+
+tv/../../../../include/adapters/av/tv/../../../model/TransitionDispatcher.h:
+
+tv/../../../../include/adapters/AdaptersComponentSupport.h:
+
+tv/../../../../include/adapters/../../config.h:
+
+/usr/local/include/ginga/cm/IComponentManager.h:
+
+/usr/local/include/ginga/cm/component/IComponent.h:
+
+/usr/include/dlfcn.h:
+
+/usr/include/bits/dlfcn.h:

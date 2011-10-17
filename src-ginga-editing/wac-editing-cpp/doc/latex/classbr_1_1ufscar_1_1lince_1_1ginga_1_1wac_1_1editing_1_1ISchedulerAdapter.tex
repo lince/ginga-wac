@@ -1,0 +1,69 @@
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter}{
+\section{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter}\index{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter@{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter}}
+}
+
+
+Interface pela qual este módulo envia mensagem a classe Scheduler do módulo Formatter.  
+
+
+
+
+{\ttfamily \#include $<$ISchedulerAdapter.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_a907bf3b317e57ea1ceb2512d40581070}{$\sim$ISchedulerAdapter} ()
+\begin{DoxyCompactList}\small\item\em Destrói a instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter}{ISchedulerAdapter}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_ac9176e8b3c85cfc3fce05bbcb2285bd1}{stopObject} (\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IObjectMode}{IObjectMode} $\ast$object)=0
+\begin{DoxyCompactList}\small\item\em Encerra a apresentação de um determinado objeto. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_a689421a01c70c7915af5a03ee7fc681a}{chanceProperty} (\hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1IObjectMode}{IObjectMode} $\ast$object, string name, string value)=0
+\begin{DoxyCompactList}\small\item\em Permite alterar as propriedades de um determinado objeto em execução. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface pela qual este módulo envia mensagem a classe Scheduler do módulo Formatter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_a907bf3b317e57ea1ceb2512d40581070}{
+\index{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter@{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter}!$\sim$ISchedulerAdapter@{$\sim$ISchedulerAdapter}}
+\index{$\sim$ISchedulerAdapter@{$\sim$ISchedulerAdapter}!br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter@{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter}}
+\subsubsection[{$\sim$ISchedulerAdapter}]{\setlength{\rightskip}{0pt plus 5cm}virtual br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter::$\sim$ISchedulerAdapter ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_a907bf3b317e57ea1ceb2512d40581070}
+
+
+Destrói a instância de \hyperlink{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter}{ISchedulerAdapter}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_a689421a01c70c7915af5a03ee7fc681a}{
+\index{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter@{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter}!chanceProperty@{chanceProperty}}
+\index{chanceProperty@{chanceProperty}!br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter@{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter}}
+\subsubsection[{chanceProperty}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter::chanceProperty ({\bf IObjectMode} $\ast$ {\em object}, \/  string {\em name}, \/  string {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_a689421a01c70c7915af5a03ee7fc681a}
+
+
+Permite alterar as propriedades de um determinado objeto em execução. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]Objeto que terá seus propriedades alteradas. \item[{\em name}]Nome da propriedade a ser alterada. \item[{\em value}]Valor a ser setado na propriedade. \end{DoxyParams}
+\hypertarget{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_ac9176e8b3c85cfc3fce05bbcb2285bd1}{
+\index{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter@{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter}!stopObject@{stopObject}}
+\index{stopObject@{stopObject}!br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter@{br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter}}
+\subsubsection[{stopObject}]{\setlength{\rightskip}{0pt plus 5cm}virtual void br::ufscar::lince::ginga::wac::editing::ISchedulerAdapter::stopObject ({\bf IObjectMode} $\ast$ {\em object})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1wac_1_1editing_1_1ISchedulerAdapter_ac9176e8b3c85cfc3fce05bbcb2285bd1}
+
+
+Encerra a apresentação de um determinado objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em object}]Objeto que deve ter sua apresentação encerrada. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ISchedulerAdapter_8h}{ISchedulerAdapter.h}\end{DoxyCompactItemize}

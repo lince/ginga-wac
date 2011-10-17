@@ -1,0 +1,91 @@
+                            README
+
+    Este pacote contém a implementação do Componente de Replicação de Conteúdo para o middleware Ginga (GingaCRC).
+    Nele estão contidas a implementação de APIs para facilitar a captura, persistência e replicação de conteúdo audiovisual apresentado na TV através de imagens, áudio ou vídeo.
+    O pacote contém também uma versão do FFMpeg contendo suporte à captura de framebuffer e uma versão alterada do FFMpeg, denominada FFMpegGinga e utilizada para compatibilidade entre o Ginga e o FFMpeg, extendendo todas as funcionalidades do FFMpeg para o middleware Ginga.
+
+        INSTALL
+
+    Para um guia de como proceder para instalar as bibliotecas, consulte o arquivo INSTALL.
+
+        LIMITAÇÕES
+
+    A versão atual não tem implementada a classe OutputStream. Dessa forma, apenas é possível utilizar uma saída de arquivo / destino de transmissão por vez. Assim, a primeira entrada de destination será utilizada como a saída.
+    O protocolo RTP exige que cada stream seja passada individualmente. Assim, excepcionalmente nesse caso, devem ser adicionadas dois destinos no caso da transmissão de vídeo: o primeiro será o socket ao qual a stream de áudio será enviada; o segundo será o da stream de vídeo.
+
+        USANDO AS BIBLIOTECAS EM SEU PROJETO
+
+    Para usar a API do GingaCRC em sua aplicação, inclua o cabeçalho desejado e lembre-se de utilizar o namespace br::ufscar::lince::util na hora da declaração de seu objeto.
+    Para compilar, inclua o header que você desejar usar para o linker e sua localização. Por exemplo, para utilizar a biblioteca ImageCapture, adicione os seguintes parâmetros em seu compilador (para o exemplo, foi usado o GNU g++ e os diretórios/nomes padrão de instalação):
+
+$ g++ foo.cpp -I/usr/local/include/ginga -L/usr/local/lib/ginga -lgingaimagecapture
+
+    Os nomes das bibliotecas, arquivo de inclusão e flag para compilação podem ser visualizados abaixo.
+-> ImageCapture:
+   - cabeçalho: ImageCapture.h;
+   - nome da biblioteca: gingaimagecapture (linker: -lgingaimagecapture);
+-> AudioCapture:
+   - cabeçalho: AudioCapture.h;
+   - nome da biblioteca: gingaaudiocapture (linker: -lgingaaudiocapture);
+-> VideoCapture:
+   - cabeçalho: VideoCapture.h;
+   - nome da biblioteca: gingavideocapture (linker: -lgingavideocapture).
+
+    EXEMPLO DE USO
+
+    Para capturar uma imagem em apresentação na TV na forma de screenshot (o processo será semelhante para todas as bibliotecas):
+
+1) Inclua biblioteca; declare o uso do namespace ou o explicite-o a cada referência ao objeto.
+   #include <ginga/capture/ImageCapture.h>
+   using namespace br::ufscar::lince::util;
+
+2) Declare um ponteiro para o objeto.
+
+   ImageCapture* i;
+
+3) Instancie o objeto através de uma chamada ao seguinte método:
+
+   i->ImageCaptureFactory(); //Pois as bibliotecas utilizam o conceito de singleton.
+
+4) Ajuste os parâmetros que deverão ser aplicados à imagem resultante. Por exemplo:
+
+   i->setWidth(800);
+   i->setHeight(600);
+   i->setImageFormat("png");
+   i->setDestination("image.png"); //Este será o destino da imagem, local onde ela será salva.
+
+5) Capture a imagem. Para a biblioteca ImageCapture, basta chamar o método capture(). Para as bibliotecas de áudio e de vídeo, chame o método run().
+
+   i->capture(); //Capture the image with the above parameters.
+
+    Exemplos de uso das APIs estão contidos nos diretórios de test de cada biblioteca. Também podem ser visualizados no módulo Ginga-LSSM adaptado.
+
+        NOTAS ADICIONAIS
+
+-> Alguns codecs não estão incluídos no pacote por questão de copyright. Se você desejar instalá-los, compile-os no configure no FFMpeg.
+   Para verificar quais codecs estão presentes no pacote, você pode consultar o arquivo FFMpeg_Avaible_Formats.txt contido em Documentação.
+    Alternativamente, após a instalação do FFMpeg, você pode executar em um terminal: 
+
+$ ffmpeg -formats
+
+-> Se você tiver a biblioteca de som ALSA instalada em sua máquina, a biblioteca a usará desde que os cabeçalhos da bibliotecas sejam encontrados durante a instação do FFMpeg. Caso não sejam encontrados, as bibliotecas utilizarão o OSS como padrão.
+   A captura de áudio via ALSA, no entanto, não pode ser automatizada sem a existência de um arquivo de configuração. Para isso, você deve configurar no diretório do usuário um arquivo chamado .asoundrc, com o dispostivo chamado default. Um exemplo encontra-se abaixo:
+
+    Exemplo:
+$vim ~/.asoundrc
+#-----
+    pcm.!default {
+        type hw
+        card 0
+    }
+    ctl.!default {
+        type hw
+        card 0
+    }
+#-----
+
+    Para verificar como criar esse arquivo, consulte a seguinte página:
+    -> http://alsa.opensrc.org/index.php/.asoundrc
+    Se você não gostar da captura pela ALSA e preferir a captura via OSS mesmo com as bibliotecas ALSA instaladas, é possível alterar o código fonte.
+    Ademais, a captura via ALSA somente pode ser realizada por drivers de som que suportem a opção MIX, devido a bugs contidos na ALSA.
+
